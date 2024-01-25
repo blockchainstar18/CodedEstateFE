@@ -1,0 +1,1 @@
+export const ConnectWallet = (props) => {};

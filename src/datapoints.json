@@ -1,0 +1,126 @@
+{
+  "timeStamp": "2024-01-04T20:25:13.2631559+04:00",
+  "responseCode": 200,
+  "validationErrorsList": [],
+  "response": {
+    "cards": [
+      {
+        "title": {
+          "englishName": "Unit 408 in FOX HILL 5 (Al Hebiah First)",
+          "arabicName": "(الحبيه الاولى) فوكس هيل 5  408 وحدة "
+        },
+        "buildingName": {
+          "englishName": "FOX HILL 5",
+          "arabicName": "فوكس هيل 5"
+        },
+        "floorUnitNumber": "4",
+        "rooms": 3,
+        "roomsName": {
+          "englishName": "3 B/R",
+          "arabicName": "ثلاث غرف"
+        },
+        "suitArea": 175.5,
+        "balconyArea": 55.74,
+        "parking": 0,
+        "parkingNumber": null,
+        "commonArea": 0.33,
+        "unitNo": "408",
+        "propertyId": 223957,
+        "mortgageStartDate": null,
+        "mortgageEndDate": null,
+        "mortgageValue": null,
+        "propertyStatus": {
+          "englishName": "Mortgaged_Totally",
+          "arabicName": "مرهونة كلياً"
+        },
+        "propertyTypeId": 3,
+        "propertySubTypeId": 60,
+        "structureGroup": {
+          "englishName": "Al Hebiah First",
+          "arabicName": "الحبيه الاولى"
+        },
+        "projectName": {
+          "englishName": null,
+          "arabicName": null
+        },
+        "propertyType": {
+          "englishName": "Unit",
+          "arabicName": "وحدة"
+        },
+        "rentalEarned": 0.0,
+        "rentalValue": 0.0,
+        "isRented": false,
+        "isOffplan": false,
+        "shareValue": 100.0,
+        "area": {
+          "englishName": "Al Hebiah First",
+          "arabicName": "الحبيه الاولى"
+        },
+        "size": {
+          "squareFeet": 2489.04,
+          "squareMeter": 231.24
+        },
+        "municipalityNo": "674-299",
+        "investmentDate": "2021-08-08T11:02:46",
+        "estimitationDate": "2024-01-04T20:29:23",
+        "investmentValue": 1200000.0,
+        "estimatedValue": 1200000.0,
+        "returnOfInvestment": 0.0,
+        "coordinate": {
+          "latitude": "25.045669",
+          "longitude": "55.24650282"
+        },
+        "cardDetail": {
+          "smartTip": "This property has been listed for sale in the same building.",
+          "notificaiton": "Mortgage going to be released in one  month",
+          "notes": [
+            {
+              "title": "Mortgage Mead",
+              "time": "2016-12-31T05:55:55",
+              "description": "It is testing purpose"
+            },
+            {
+              "title": "Mortgage Mead",
+              "time": "2016-12-31T06:55:55",
+              "description": "It is testing purpose 2"
+            }
+          ]
+        },
+        "list": {
+          "estimatedDate": "2024-01-04T20:29:23",
+          "estimatedValue": 1200000.0,
+          "investmentDate": "2021-08-08T11:02:46",
+          "investmentValue": 1200000.0
+        },
+        "notificationRoute": "message/private/properties/3",
+        "tabuPropertyId": 223957,
+        "landPropertyId": 127079,
+        "buildingPropertyId": 150124,
+        "blockTransaction": 0,
+        "ejariPropertyId": 0,
+        "isFreeHold": true,
+        "isLeaseHold": false,
+        "isBusinessOwner": true,
+        "isGranted": false,
+        "isBestowal": false,
+        "serviceChargeIndex": 17.18,
+        "project": {
+          "number": 0,
+          "name": {
+            "englishName": null,
+            "arabicName": null
+          }
+        },
+        "rentalIndex": {
+          "min": 123000.0,
+          "max": 151000.0
+        },
+        "propertyEvaluation": null,
+        "landSubTypeId": 2,
+        "isAgent": false,
+        "agentCompany": null
+      }
+    ],
+    "additionalData": null
+  }
+}

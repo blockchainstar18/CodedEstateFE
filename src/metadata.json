@@ -1,0 +1,34 @@
+{
+  "Property Type and Usage": { "usageNameEn": "Residential" },
+
+  "Land and Building Details": {},
+
+  "Land Number": { "landNo": "468" },
+
+  "Land Dimension Number": { "landDmNo": "681" },
+
+  "Building Name": { "buildingNameEn": "Harrington House" },
+
+  "Area": { "areaEn": "Al Barsha South Fourth" },
+
+  "Property Size": { "size": "71.75" },
+
+  "Ejari Property ID": { "ejariPropertyId": 2034124818 },
+
+  "Property Number": { "propertyNumber": "209" },
+
+  "Latitude and Longitude Coordinates": {
+    "latitude": "25.05117873",
+    "longitude": "55.20116147"
+  },
+
+  "Additional Property Details": {},
+
+  "Property ID": { "propertyId": 372252764 },
+
+  "Land Property ID Key": "landPropertyIdKey",
+
+  "Building Property ID Key": "buildingPropertyIdKey",
+
+  "Unit Property ID Key": "unitPropertyIdKey"
+}
