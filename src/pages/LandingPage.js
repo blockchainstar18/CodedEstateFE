@@ -170,7 +170,7 @@ export const LandingPage = () => {
 
   useEffect(() => {
     cycleText();
-    // getAllAssets();
+    getAllAssets();
 
     checkInstalledWallets();
     // connect("keplr");
@@ -209,7 +209,7 @@ export const LandingPage = () => {
           >
             <div
               className="bg-[#5D00CF] text-white px-[18px] py-[10px] rounded-[16px] cursor-pointer "
-              // onClick={handleShow}
+              onClick={handleShow}
             >
               Connect Wallet
             </div>
