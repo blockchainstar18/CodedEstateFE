@@ -273,6 +273,6 @@ span.input-range__label-container {
   border: 1px solid #5b1dee !important;
 }
 
-div {
+div:not(.tooltip) {
   transition: all ease 0.2s !important;
 }
