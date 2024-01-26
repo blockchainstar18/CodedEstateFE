@@ -77,7 +77,7 @@ export const LandlordDashboard = () => {
         <div className="text-[#8C8C8C]">
           Welcome to the CodedEstate Dashboard
         </div>
-        <div className="my-[40px] flex gap-[16px]">
+        <div className="my-[40px] flex gap-[16px] w-full">
           <div>
             <div className="font-bold">Verify ID</div>
             <div className="rounded-[8px] shadow-md px-[12px] py-[18px] space-y-[20px] w-[260px] flex flex-col items-center">
@@ -94,7 +94,7 @@ export const LandlordDashboard = () => {
           </div>
           <div className="w-full">
             <div className="font-bold">Your Minted NFTs</div>
-            <div className="rounded-[8px] shadow-md w-full max-w-[1200px] h-[184px] flex p-[8px] gap-[16px] overflow-auto hiddenscrollbar">
+            <div className="rounded-[8px] shadow-md w-full h-[184px] flex flex-wrap p-[8px] gap-[16px] overflow-auto scrollbarwidth">
               {assets.length > 0 ? (
                 <>
                   {assets.map((item) => {

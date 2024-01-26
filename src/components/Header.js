@@ -1,4 +1,4 @@
-import logo from "../assets/images/Logo Coded-Estate.png";
+import logo from "../assets/images/Logo Coded-Estate.svg";
 import group from "../assets/images/Group 1000004850.png";
 import frame from "../assets/images/Frame 1000001444.png";
 import frame1 from "../assets/images/Frame 1000001445.png";
@@ -99,7 +99,7 @@ export const Header = () => {
   return (
     <div className="relative w-full">
       <div className="flex w-full h-[60px] items-center justify-between p-[20px] bg-white rounded-t-lg fixed top-0 font-semibold z-[1200]">
-        <img src={logo}></img>
+        <img src={logo} width={130}></img>
 
         <div className="flex items-center">
           <img src={group}></img>

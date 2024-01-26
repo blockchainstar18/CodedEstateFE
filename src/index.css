@@ -201,6 +201,7 @@ table {
 
 .scrollbarwidth::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
   background: #ebebeb;
   display: block;
 }
