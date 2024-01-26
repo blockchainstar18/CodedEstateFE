@@ -55,17 +55,17 @@ export const Verify = () => {
                 Submit
               </div>
 
-              {/* <GenerateProof
-                appID="0e516670-3195-4a54-b5a6-3e27ecd40762"
+              <GenerateProof
+                appID="06c58145-a605-49bf-acd2-23ea6d26d64b"
                 userID="dasq2easdase-asdq2e3"
                 onProofSubmission={(proofs, sessionId) => {
-                  console.log("submission success!");
+                  alert("submission success!");
                   console.log(proofs, sessionId);
                 }}
                 onProofSubmissionFailed={() => {
                   alert("submission failed!");
                 }}
-              /> */}
+              />
             </div>
           </div>
         </div>

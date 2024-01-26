@@ -7,7 +7,7 @@
     "@nibiruchain/nibijs": "^0.21.43",
     "@nibiruchain/protojs": "^0.21.16",
     "@pinata/sdk": "^2.1.0",
-    "@reclaimprotocol/reclaim-connect-react": "^0.0.1-beta.11",
+    "@reclaimprotocol/reclaim-connect-react": "^0.0.1-beta.12",
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -40,7 +40,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "build:digitalocean": "npm install --force && npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -67,5 +68,8 @@
     "crypto-browserify": "^3.12.0",
     "react-app-rewired": "^2.2.1",
     "stream-browserify": "^3.0.0"
+  },
+  "engines": {
+    "node": "16.18.0"
   }
 }
