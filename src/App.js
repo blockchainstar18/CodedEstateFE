@@ -133,25 +133,20 @@ function App() {
 
       <div hidden={show}>
         <Router>
-          <Navigater />
+          {/* <Navigater /> */}
           <Routes>
-            <Route path="landing" element={<LandingPage />}></Route>
-            <Route element={<MainLayout />}>
+            <Route path="*" element={<LandingPage />}></Route>
+            {/* <Route element={<MainLayout />}>
               <Route path="account" element={<Account />}></Route>
               <Route path="swap" element={<Swap />}></Route>
 
               <Route path="yieldestate" element={<></>}></Route>
               <Route path="rent" element={<Rent />}></Route>
-              {/* <Route path="property" element={<DetailPage />}></Route> */}
-              {/* <Route path="payment" element={<DetailPayment />}></Route> */}
-              {/* <Route path="reservation" element={<DetailConfirm />}></Route> */}
-
               <Route path="buy" element={<></>}></Route>
               <Route path="dashboard" element={<DashboardLayout />}>
-                {/* <Route path="landlord" element={<Dashboard />}></Route> */}
               </Route>
             </Route>
-            <Route path="*" element={<Navigater />}></Route>
+            <Route path="*" element={<Navigater />}></Route> */}
           </Routes>
         </Router>
       </div>

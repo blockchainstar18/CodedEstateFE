@@ -1,6 +1,6 @@
 import logo from "../assets/images/Logo Coded-Estate.svg";
 
-import logowhite from "../assets/images/landingpage/logo.png";
+import logowhite from "../assets/images/landingpage/logo.svg";
 
 import warning from "../assets/images/landingpage/Warning.png";
 import plus from "../assets/images/landingpage/Plus.png";
@@ -17,20 +17,21 @@ import map from "../assets/images/landingpage/map.png";
 import home from "../assets/images/landingpage/house-search.png";
 import home1 from "../assets/images/landingpage/house-search.1.png";
 
-import homeCanada from "../assets/images/landingpage/image 2134.png";
-import homeGreenland from "../assets/images/landingpage/image 2138.png";
-import homeUS from "../assets/images/landingpage/image 2135.png";
-import homeBrazil from "../assets/images/landingpage/image 2133.png";
-import homeFinland from "../assets/images/landingpage/image 2137.png";
-import homeRussia from "../assets/images/landingpage/image 2132.png";
-import homeIndonesia from "../assets/images/landingpage/image 2136.png";
+import homeCanada from "../assets/images/landingpage/image 2134.svg";
+import homeGreenland from "../assets/images/landingpage/image 2138.svg";
+import homeUS from "../assets/images/landingpage/image 2135.svg";
+import homeBrazil from "../assets/images/landingpage/image 2133.svg";
+import homeFinland from "../assets/images/landingpage/image 2137.svg";
+import homeRussia from "../assets/images/landingpage/image 2132.svg";
+import homeIndonesia from "../assets/images/landingpage/image 2136.svg";
+
 import Card from "../assets/images/landingpage/Card.png";
 import image from "../assets/images/landingpage/image.png";
 
-import icon from "../assets/images/landingpage/icon.png";
-import icon1 from "../assets/images/landingpage/icon (1).png";
-import icon2 from "../assets/images/landingpage/icon (2).png";
-import icon3 from "../assets/images/landingpage/icon (3).png";
+import icon from "../assets/images/landingpage/icon.svg";
+import icon1 from "../assets/images/landingpage/icon (1).svg";
+import icon2 from "../assets/images/landingpage/icon (2).svg";
+import icon3 from "../assets/images/landingpage/icon (3).svg";
 
 import real from "../assets/images/landingpage/Frame 1000005266.png";
 import hidd from "../assets/images/landingpage/Frame 1000005266 (0).png";
@@ -58,6 +59,8 @@ import { OverlayTrigger } from "react-bootstrap";
 import { Tooltip } from "react-bootstrap";
 import { setAllNFTs, updateNFT } from "../Actions/NFTSlice";
 import { getAllTokenIds, getAllInfo } from "../components/NFTs";
+
+import "../LandingPage.css";
 
 export const LandingPage = () => {
   const [show, setShow] = useState(false);
@@ -153,7 +156,7 @@ export const LandingPage = () => {
   };
 
   useEffect(() => {
-    getAllAssets();
+    // getAllAssets();
 
     checkInstalledWallets();
     // connect("keplr");
@@ -188,11 +191,11 @@ export const LandingPage = () => {
           </div>
           <OverlayTrigger
             placement={"bottom"}
-            overlay={<Tooltip className="margin">Available Soon</Tooltip>}
+            overlay={<Tooltip className="margin">coming soon</Tooltip>}
           >
             <div
-              className="bg-[#5D00CF] text-white px-[18px] py-[10px] rounded-[16px] cursor-pointer"
-              onClick={handleShow}
+              className="bg-[#5D00CF] text-white px-[18px] py-[10px] rounded-[16px] cursor-pointer "
+              // onClick={handleShow}
             >
               Connect Wallet
             </div>
@@ -345,7 +348,7 @@ export const LandingPage = () => {
               <input placeholder="Search properties" className="w-full"></input>
               <OverlayTrigger
                 placement={"bottom"}
-                overlay={<Tooltip>Available Soon</Tooltip>}
+                overlay={<Tooltip>coming soon</Tooltip>}
               >
                 <div className="bg-[#202020] p-[10px] rounded-[40px] cursor-pointer">
                   <img src={home1}></img>
@@ -357,7 +360,7 @@ export const LandingPage = () => {
               <div className="flex gap-[12px]">
                 <OverlayTrigger
                   placement={"bottom"}
-                  overlay={<Tooltip>Available Soon</Tooltip>}
+                  overlay={<Tooltip>coming soon</Tooltip>}
                 >
                   <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
                     I'm Buyer
@@ -365,7 +368,7 @@ export const LandingPage = () => {
                 </OverlayTrigger>
                 <OverlayTrigger
                   placement={"bottom"}
-                  overlay={<Tooltip>Available Soon</Tooltip>}
+                  overlay={<Tooltip>coming soon</Tooltip>}
                 >
                   <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
                     I'm Owner
@@ -373,7 +376,7 @@ export const LandingPage = () => {
                 </OverlayTrigger>
                 <OverlayTrigger
                   placement={"bottom"}
-                  overlay={<Tooltip>Available Soon</Tooltip>}
+                  overlay={<Tooltip>coming soon</Tooltip>}
                 >
                   <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
                     I'm Renting
@@ -381,7 +384,7 @@ export const LandingPage = () => {
                 </OverlayTrigger>
                 <OverlayTrigger
                   placement={"bottom"}
-                  overlay={<Tooltip>Available Soon</Tooltip>}
+                  overlay={<Tooltip>coming soon</Tooltip>}
                 >
                   <div className="px-[18px] py-[10px] rounded-[16px] text-white bg-black cursor-pointer">
                     Just Looking
@@ -413,15 +416,15 @@ export const LandingPage = () => {
         ></img>
         <img
           src={homeRussia}
-          className="absolute top-[9vw] left-[78vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          className="absolute top-[7vw] left-[75vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
         ></img>
         <img
           src={Card}
-          className="absolute top-[10vw] left-[80vw] z-[90] transition ease-in-out hover:scale-110 duration-300 hover:-translate-y-1"
+          className="absolute rounded-[16px] top-[10vw] left-[77vw] z-[90] transition ease-in-out duration-300 hover:-translate-y-[20px] hover:z-[110]"
         ></img>
         <img
           src={homeIndonesia}
-          className="absolute top-[28vw] left-[78vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          className="absolute top-[30vw] left-[74vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
         ></img>
       </div>
 
@@ -434,7 +437,10 @@ export const LandingPage = () => {
             for travelers, investors, future home owners and home owners
           </div>
           <div className="flex my-[50px]">
-            <img src={icon} className="px-[80px]"></img>
+            <img
+              src={icon}
+              className="mx-[80px] transition ease-in-out hover:-translate-y-[20px] duration-300"
+            ></img>
             <div className="flex">
               <div className="m-auto space-y-[20px]">
                 <div className="flex items-center gap-[20px] text-[#4C37C3]">
@@ -467,10 +473,16 @@ export const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <img src={icon1} className="px-[80px]"></img>
+            <img
+              src={icon1}
+              className="mx-[80px] transition ease-in-out hover:-translate-y-[20px] duration-300"
+            ></img>
           </div>
           <div className="flex my-[50px]">
-            <img src={icon2} className="px-[80px]"></img>
+            <img
+              src={icon2}
+              className="mx-[80px] transition ease-in-out hover:-translate-y-[20px] duration-300"
+            ></img>
             <div className="flex">
               <div className="m-auto space-y-[20px]">
                 <div className="flex items-center gap-[20px] text-[#4C37C3]">
@@ -504,7 +516,10 @@ export const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <img src={icon3} className="px-[80px]"></img>
+            <img
+              src={icon3}
+              className="mx-[80px] transition ease-in-out hover:-translate-y-[20px] duration-300"
+            ></img>
           </div>
         </div>
       </div>
@@ -558,7 +573,10 @@ export const LandingPage = () => {
               </div>
             </div>
           </div>
-          <img src={image}></img>
+          <img
+            src={image}
+            className="transition ease-in-out duration-300 hover:-translate-y-5"
+          ></img>
         </div>
       </div>
 
@@ -599,7 +617,7 @@ export const LandingPage = () => {
       <div className="gradbg px-[120px] pt-[56px] pb-[24px]">
         <div className="flex justify-between">
           <div className="flex flex-col justify-between items-center">
-            <div className="w-full">
+            <div className="w-full my-[20px]">
               <img src={logowhite}></img>
             </div>
             <div className="flex text-white gap-[24px]">
@@ -645,7 +663,7 @@ export const LandingPage = () => {
         <div className="w-full bg-[#959595] h-[1px] my-[24px]"></div>
         <div className="flex justify-between">
           <div className="flex gap-[10px] text-white">
-            <div>Copyright © 2023 CodedEstate</div>
+            <div>Copyright © 2024 CodedEstate</div>
             <div>Company</div>
             <div>About</div>
           </div>
