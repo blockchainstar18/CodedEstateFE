@@ -1,4 +1,5 @@
-import logo from "../assets/images/Logo Coded-Estate.png";
+import logo from "../assets/images/Logo Coded-Estate.svg";
+
 import logowhite from "../assets/images/landingpage/logo.png";
 
 import warning from "../assets/images/landingpage/Warning.png";
@@ -161,7 +162,7 @@ export const LandingPage = () => {
   return (
     <div className="w-full bg-white" hidden={show}>
       <div className="flex items-center justify-between py-[14px] px-[100px] fixed top-0 w-full h-max z-[1200] bg-white">
-        <img src={logo}></img>
+        <img src={logo} width={140}></img>
         <div className="flex items-center gap-[32px] cursor-pointer">
           <div
             onClick={() => {
