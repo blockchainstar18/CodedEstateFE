@@ -74,9 +74,19 @@ export const LandingPage = () => {
   });
 
   const [flag, setFlag] = useState([1, 0, 0]);
-  const [headlineText, setHeadlineText] = useState("Own");
+  const [headlineText, setHeadlineText] = useState("Rent");
 
-  // Rent, Buy, Sell,
+  const texts = ["Rent", "Buy", "Sell", "Own"];
+  let currentIndex = 0;
+
+  const cycleText = () => {
+    if (currentIndex == 4) currentIndex = 0;
+    setHeadlineText(texts[currentIndex]);
+    currentIndex++;
+    setTimeout(() => {
+      cycleText();
+    }, 2000);
+  };
 
   const connect = async (wallet) => {
     if (wallet == "xdefi") {
@@ -159,6 +169,7 @@ export const LandingPage = () => {
   };
 
   useEffect(() => {
+    cycleText();
     // getAllAssets();
 
     checkInstalledWallets();
@@ -369,10 +380,7 @@ export const LandingPage = () => {
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
                 >
-                  <div
-                    className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer"
-                    onMouseEnter={() => setHeadlineText("Buy")}
-                  >
+                  <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
                     I'm Buyer
                   </div>
                 </OverlayTrigger>
@@ -381,10 +389,7 @@ export const LandingPage = () => {
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
                 >
-                  <div
-                    className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer"
-                    onMouseEnter={() => setHeadlineText("Sell")}
-                  >
+                  <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
                     I'm Owner
                   </div>
                 </OverlayTrigger>
@@ -392,10 +397,7 @@ export const LandingPage = () => {
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
                 >
-                  <div
-                    className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer"
-                    onMouseEnter={() => setHeadlineText("Rent")}
-                  >
+                  <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
                     I'm Renting
                   </div>
                 </OverlayTrigger>

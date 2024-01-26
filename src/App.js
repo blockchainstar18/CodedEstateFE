@@ -143,8 +143,7 @@ function App() {
               <Route path="yieldestate" element={<></>}></Route>
               <Route path="rent" element={<Rent />}></Route>
               <Route path="buy" element={<></>}></Route>
-              <Route path="dashboard" element={<DashboardLayout />}>
-              </Route>
+              <Route path="dashboard" element={<DashboardLayout />}></Route>
             </Route>
             <Route path="*" element={<Navigater />}></Route> */}
           </Routes>
