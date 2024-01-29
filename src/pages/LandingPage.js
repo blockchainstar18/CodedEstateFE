@@ -74,6 +74,19 @@ export const LandingPage = () => {
   });
 
   const [flag, setFlag] = useState([1, 0, 0]);
+  const [headlineText, setHeadlineText] = useState("Rent");
+
+  const texts = ["Rent", "Buy", "Sell", "Own"];
+  let currentIndex = 0;
+
+  const cycleText = () => {
+    if (currentIndex == 4) currentIndex = 0;
+    setHeadlineText(texts[currentIndex]);
+    currentIndex++;
+    setTimeout(() => {
+      cycleText();
+    }, 2000);
+  };
 
   const connect = async (wallet) => {
     if (wallet == "xdefi") {
@@ -156,7 +169,8 @@ export const LandingPage = () => {
   };
 
   useEffect(() => {
-    // getAllAssets();
+    cycleText();
+    getAllAssets();
 
     checkInstalledWallets();
     // connect("keplr");
@@ -342,7 +356,11 @@ export const LandingPage = () => {
         <img src={map} className="w-full"></img>
         <div className="absolute w-full h-full flex z-[10]">
           <div className="m-auto">
-            <div className="text-[48px]">RWA Real Estate On-Chain</div>
+            <div className="flex text-[48px] gap-[16px]">
+              <div>Easiest Way to</div>
+              <div className="w-[100px]">{headlineText}</div>
+              <div>Real Estate</div>
+            </div>
             <div className="globalInputForm p-[4px] pl-[16px] flex items-center w-full gap-[12px] radius40 mt-[20px]">
               <img src={home}></img>
               <input placeholder="Search properties" className="w-full"></input>
@@ -357,7 +375,7 @@ export const LandingPage = () => {
             </div>
             <div className="p-[24px] rounded-[12px] shadow-md bg-white mt-[16px] space-y-[10px]">
               <div className="text-center text-[20px]">Get Started</div>
-              <div className="flex gap-[12px]">
+              <div className="flex gap-[12px] justify-center">
                 <OverlayTrigger
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
@@ -366,6 +384,7 @@ export const LandingPage = () => {
                     I'm Buyer
                   </div>
                 </OverlayTrigger>
+
                 <OverlayTrigger
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
@@ -664,12 +683,23 @@ export const LandingPage = () => {
         <div className="flex justify-between">
           <div className="flex gap-[10px] text-white">
             <div>Copyright © 2024 CodedEstate</div>
-            <div>Company</div>
-            <div>About</div>
+            {/* <div>Company</div>
+            <div>About</div> */}
           </div>
           <div className="flex gap-[10px]">
-            <img src={discord}></img>
-            <img src={twitter}></img>
+            <div>
+              <a href="https://discord.gg/vdMcXkQQ" target="blank">
+                <img src={discord}></img>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://x.com/codedestate?s=21&t=5OdxYhHLF31Z8VwzP3lI0g"
+                target="blank"
+              >
+                <img src={twitter}></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>

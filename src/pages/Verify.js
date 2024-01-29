@@ -55,17 +55,82 @@ export const Verify = () => {
                 Submit
               </div>
 
-              <GenerateProof
-                appID="06c58145-a605-49bf-acd2-23ea6d26d64b"
-                userID="dasq2easdase-asdq2e3"
-                onProofSubmission={(proofs, sessionId) => {
-                  alert("submission success!");
-                  console.log(proofs, sessionId);
-                }}
-                onProofSubmissionFailed={() => {
-                  alert("submission failed!");
-                }}
-              />
+              <div className="flex gap-[20px]">
+                <GenerateProof
+                  appID="06c58145-a605-49bf-acd2-23ea6d26d64b"
+                  userID="dasq2easdase-asdq2e3"
+                  onProofSubmission={(proofs, sessionId) => {
+                    alert("submission success!");
+                    console.log(proofs, sessionId);
+                  }}
+                  onProofSubmissionFailed={() => {
+                    alert("submission failed!");
+                  }}
+                  customize={{
+                    triggerButton: {
+                      text: "Emirates Id",
+                      style: {
+                        backgroundColor: "#5d00cf",
+                        color: "#ffffff",
+                        padding: "10px 40px",
+                        height: "44px",
+                        borderRadius: "16px",
+                        boxShadow: "0px 2px 2px 0px rgba(0, 0, 0, 0.65)",
+                      },
+                    },
+                  }}
+                />
+
+                <GenerateProof
+                  appID="15911cbd-3d80-4e53-b092-f6058f975514"
+                  userID="dasq2easdase-asdq2e3"
+                  onProofSubmission={(proofs, sessionId) => {
+                    alert("submission success!");
+                    console.log(proofs, sessionId);
+                  }}
+                  onProofSubmissionFailed={() => {
+                    alert("submission failed!");
+                  }}
+                  customize={{
+                    triggerButton: {
+                      text: "Metadata (Owner provider)",
+                      style: {
+                        backgroundColor: "#5d00cf",
+                        color: "#ffffff",
+                        padding: "10px 40px",
+                        height: "44px",
+                        borderRadius: "16px",
+                        boxShadow: "0px 2px 2px 0px rgba(0, 0, 0, 0.65)",
+                      },
+                    },
+                  }}
+                />
+
+                <GenerateProof
+                  appID="fbe468b3-03d5-45ce-95e0-a1e8ac591047"
+                  userID="dasq2easdase-asdq2e3"
+                  onProofSubmission={(proofs, sessionId) => {
+                    alert("submission success!");
+                    console.log(proofs, sessionId);
+                  }}
+                  onProofSubmissionFailed={() => {
+                    alert("submission failed!");
+                  }}
+                  customize={{
+                    triggerButton: {
+                      text: "Tenant Provider",
+                      style: {
+                        backgroundColor: "#5d00cf",
+                        color: "#ffffff",
+                        padding: "10px 40px",
+                        height: "44px",
+                        borderRadius: "16px",
+                        boxShadow: "0px 2px 2px 0px rgba(0, 0, 0, 0.65)",
+                      },
+                    },
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
