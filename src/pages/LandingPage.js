@@ -195,7 +195,7 @@ export const LandingPage = () => {
           >
             <div
               className="bg-[#5D00CF] text-white px-[18px] py-[10px] rounded-[16px] cursor-pointer "
-              // onClick={handleShow}
+              onClick={handleShow}
             >
               Connect Wallet
             </div>
@@ -237,7 +237,7 @@ export const LandingPage = () => {
 
                   <div className="grid grid-cols-2 gap-[12px] mt-[50px]">
                     <div
-                      className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer"
+                      className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100"
                       onClick={() => {
                         connect("xdefi");
                       }}
@@ -250,7 +250,7 @@ export const LandingPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer">
+                    <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100">
                       <img src={metamask}></img>
                       <div>
                         <div className="font-bold">Metamask</div>
@@ -260,7 +260,7 @@ export const LandingPage = () => {
                       </div>
                     </div>
                     <div
-                      className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer"
+                      className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100"
                       onClick={() => {
                         connect("keplr");
                       }}
@@ -278,7 +278,7 @@ export const LandingPage = () => {
                         )}
                       </div>
                     </div>
-                    <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer">
+                    <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100">
                       <img src={phantom}></img>
                       <div>
                         <div className="font-bold">Phantom</div>
@@ -287,7 +287,7 @@ export const LandingPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer">
+                    <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100">
                       <img src={coinbase}></img>
                       <div>
                         <div className="font-bold">Coinbase</div>
@@ -296,7 +296,7 @@ export const LandingPage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer">
+                    <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100">
                       <img src={walletconnect}></img>
                       <div>
                         <div className="font-bold">WalletConnect</div>
@@ -307,7 +307,7 @@ export const LandingPage = () => {
                     </div>
 
                     <div
-                      className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer"
+                      className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100"
                       onClick={() => {
                         connect("leap");
                       }}
@@ -587,27 +587,27 @@ export const LandingPage = () => {
               The Five Key Features of Our Cutting-Edge NFTs Marketplace
             </div>
           </div>
-          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px]">
+          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
             <img src={real}></img>
             <div>Real world assets in NFTs</div>
           </div>
           <div></div>
-          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px]">
+          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
             <img src={hidd}></img>
             <div>No hidden or extra fees</div>
           </div>
           <div></div>
-          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px]">
+          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
             <img src={remo}></img>
             <div>Remove barriers to real estate investments</div>
           </div>
           <div></div>
-          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px]">
+          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
             <img src={frict}></img>
             <div>Frictionless buying and selling</div>
           </div>
           <div></div>
-          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px]">
+          <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
             <img src={fully}></img>
             <div>Fully decentralised process</div>
           </div>
