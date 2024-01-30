@@ -208,7 +208,8 @@ export const LandingPage = () => {
             overlay={<Tooltip className="margin">coming soon</Tooltip>}
           >
             <div
-              className="bg-[#5D00CF] text-white px-[18px] py-[10px] rounded-[16px] cursor-pointer "
+              // className="bg-[#5D00CF] text-white px-[18px] py-[10px] rounded-[16px] cursor-pointer "
+              className="cursor-pointer px-[18px] py-[10px] bg-[#5D00CF] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px]"
               onClick={handleShow}
             >
               Connect Wallet
@@ -380,7 +381,8 @@ export const LandingPage = () => {
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
                 >
-                  <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
+                  {/* <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer"> */}
+                  <div className="cursor-pointer px-[18px] py-[10px] bg-[#d78e80] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px]">
                     I'm Buyer
                   </div>
                 </OverlayTrigger>
@@ -389,7 +391,7 @@ export const LandingPage = () => {
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
                 >
-                  <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
+                  <div className="cursor-pointer px-[18px] py-[10px] bg-[#d78e80] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px]">
                     I'm Owner
                   </div>
                 </OverlayTrigger>
@@ -397,7 +399,7 @@ export const LandingPage = () => {
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
                 >
-                  <div className="px-[18px] py-[10px] rounded-[16px] text-[#5D00CF] border-[#5D00CF] border-[1px] cursor-pointer">
+                  <div className="cursor-pointer px-[18px] py-[10px] bg-[#d78e80] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px]">
                     I'm Renting
                   </div>
                 </OverlayTrigger>
@@ -405,7 +407,7 @@ export const LandingPage = () => {
                   placement={"bottom"}
                   overlay={<Tooltip>coming soon</Tooltip>}
                 >
-                  <div className="px-[18px] py-[10px] rounded-[16px] text-white bg-black cursor-pointer">
+                  <div className="cursor-pointer px-[18px] py-[10px] bg-black text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px]">
                     Just Looking
                   </div>
                 </OverlayTrigger>
