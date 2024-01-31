@@ -310,12 +310,13 @@ export const SearchOptionBar = () => {
               <SelectionGroup
                 defaultItem={datePickerIndex}
                 className="p-[6px] shadow-md gap-[8px] rounded-[16px] flex w-max mx-auto my-[20px] text-[#959595]"
+                SelectedItemMask="shadow-md font-bold text-black"
               >
                 <SelectionItem
                   SelectedItem={
-                    <div className="w-[120px] rounded-[10px] flex items-center justify-center gap-[10px] shadow-md font-bold text-black">
+                    <div className="w-[120px] rounded-[10px] flex items-center justify-center gap-[10px]">
                       <div>Dates</div>
-                      <img src={light}></img>
+                      <img src={light} alt=""></img>
                     </div>
                   }
                   UnselectedItem={
@@ -332,7 +333,7 @@ export const SearchOptionBar = () => {
                 />
                 <SelectionItem
                   SelectedItem={
-                    <div className="w-[120px] rounded-[10px] flex items-center justify-center gap-[10px] shadow-md font-bold text-black">
+                    <div className="w-[120px] rounded-[10px] flex items-center justify-center gap-[10px]">
                       <div>Months</div>
                       <img src={light}></img>
                     </div>

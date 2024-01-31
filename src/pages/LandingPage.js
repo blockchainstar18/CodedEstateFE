@@ -228,7 +228,8 @@ export const LandingPage = () => {
                 <div className="flex items-center justify-between">
                   <img src={logo}></img>
                   <div className="flex items-center gap-[12px]">
-                    <div className="px-[14px] py-[8px] border-[#5D00CF] border-[1px] rounded-[16px] text-[#5D00CF] flex items-center gap-[8px]">
+                    {/* <div className="px-[14px] py-[8px] border-[#5D00CF] border-[1px] rounded-[16px] text-[#5D00CF] flex items-center gap-[8px]"> */}
+                    <div className="cursor-pointer px-[18px] py-[10px] text-5D00CF shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px] flex items-center gap-[8px]">
                       <img src={warning}></img>
                       <div>I don't have wallet</div>
                     </div>
@@ -343,7 +344,8 @@ export const LandingPage = () => {
 
                   {/* <NetworkManager options={options} /> */}
 
-                  <div className="bg-[#5B1DEE] text-white px-[20px] py-[12px] rounded-[16px] w-max mx-auto mt-[20px]">
+                  {/* <div className="bg-[#5B1DEE] text-white px-[20px] py-[12px] rounded-[16px] w-max mx-auto mt-[20px]"> */}
+                  <div className="cursor-pointer px-[20px] py-[12px] mt-[20px] mx-auto bg-[#5D00CF] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px] max-w-max">
                     Connect Wallet
                   </div>
                 </div>

@@ -281,10 +281,11 @@ export const Swap = () => {
           <SelectionGroup
             className="p-[6px] rounded-[16px] shadow-md gap-[8px] w-full flex"
             defaultItem={0}
+            SelectedItemMask="shadow-md rounded-[16px]"
           >
             <SelectionItem
               SelectedItem={
-                <div className="py-[6px] w-full flex px-[60px] items-center justify-between shadow-md rounded-[16px]">
+                <div className="py-[6px] w-full flex px-[60px] items-center justify-between">
                   <div>Swap Tokens</div>
                   <img src={light} />
                 </div>
@@ -297,7 +298,7 @@ export const Swap = () => {
             />
             <SelectionItem
               SelectedItem={
-                <div className="py-[6px] w-full flex px-[60px] items-center justify-between shadow-md rounded-[16px]">
+                <div className="py-[6px] w-full flex px-[60px] items-center justify-between">
                   <div>YieldEstate Swap</div>
                   <img src={light} />
                 </div>

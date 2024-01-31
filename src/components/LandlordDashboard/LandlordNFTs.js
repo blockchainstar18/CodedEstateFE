@@ -262,12 +262,13 @@ export const LandlordNFTs = () => {
               <SelectionGroup
                 defaultItem={NFTsFlag}
                 className="p-[6px] shadow-md gap-[8px] rounded-[16px] flex w-max text-[#959595] items-center"
+                SelectedItemMask="shadow-md font-bold text-black"
               >
                 <SelectionItem
                   SelectedItem={
-                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] shadow-md font-bold text-black">
+                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                       <div>Verified NFTs</div>
-                      <img src={light}></img>
+                      <img src={light} alt=""></img>
                     </div>
                   }
                   UnselectedItem={
@@ -281,9 +282,9 @@ export const LandlordNFTs = () => {
                 />
                 <SelectionItem
                   SelectedItem={
-                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] shadow-md font-bold text-black">
+                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                       <div>Unverified NFTs</div>
-                      <img src={light}></img>
+                      <img src={light} alt=""></img>
                     </div>
                   }
                   UnselectedItem={
@@ -297,9 +298,9 @@ export const LandlordNFTs = () => {
                 />
                 <SelectionItem
                   SelectedItem={
-                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] shadow-md font-bold text-black">
+                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                       <div>My Listings</div>
-                      <img src={light}></img>
+                      <img src={light} alt=""></img>
                     </div>
                   }
                   UnselectedItem={
@@ -316,17 +317,17 @@ export const LandlordNFTs = () => {
 
             <div className="flex items-center gap-[20px]">
               <div className="flex items-center shadow-md rounded-[4px] px-[12px] py-[6px] gap-[12px]">
-                <img src={search}></img>
+                <img src={search} alt=""></img>
                 <input placeholder="Search" className="w-full" />
-                <img src={slash}></img>
+                <img src={slash} alt=""></img>
               </div>
 
               <div className="items-center flex">
                 <div className="p-[8px] bg-[#F2F2F2]">
-                  <img src={windowIcon}></img>
+                  <img src={windowIcon} alt=""></img>
                 </div>
                 <div className="p-[8px]">
-                  <img src={list}></img>
+                  <img src={list} alt=""></img>
                 </div>
               </div>
             </div>
@@ -503,11 +504,11 @@ export const LandlordNFTs = () => {
                 first reviews.
               </div>
               <div className="flex items-center mt-[40px]">
-                <img src={circlechecked} />
+                <img src={circlechecked} alt="" />
                 <div className="bg-[#EFE8FD] w-[160px] h-[4px]" />
-                <img src={circlechecked} />
+                <img src={circlechecked} alt="" />
                 <div className="bg-[#EFE8FD] w-[160px] h-[4px]" />
-                <img src={circlechecked} />
+                <img src={circlechecked} alt="" />
               </div>
               <div className="grid grid-cols-3 justify-items-center gap-[60px]">
                 <div>Autofill Metadata</div>
@@ -547,6 +548,7 @@ export const LandlordNFTs = () => {
                                   <img
                                     src={gateWay + hash}
                                     className="w-[120px] h-[100px] rounded-[5px]"
+                                    alt=""
                                   />
                                   <img
                                     className="cursor-pointer"
@@ -555,6 +557,7 @@ export const LandlordNFTs = () => {
                                       onImageRemoveFromCurrent(index);
                                       onImageRemove(-1);
                                     }}
+                                    alt=""
                                   />
                                 </div>
                               );
@@ -565,18 +568,20 @@ export const LandlordNFTs = () => {
                                   <img
                                     src={im.data_url}
                                     className="w-[120px] h-[100px] rounded-[5px]"
+                                    alt=""
                                   />
                                   <img
                                     className="cursor-pointer"
                                     src={deleteIcon}
                                     onClick={() => onImageRemove(index)}
+                                    alt=""
                                   />
                                 </div>
                               );
                             })}
                           </div>
                         ) : (
-                          <img src={uploadimage}></img>
+                          <img src={uploadimage} alt=""></img>
                         )}
                         <div
                           className="text-white px-[16px] py-[9px] rounded-[40px] bg-[#4C37C3] cursor-pointer"

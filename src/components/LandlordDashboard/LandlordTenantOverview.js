@@ -357,10 +357,11 @@ export const LandlordTenantOverview = () => {
                 <SelectionGroup
                   defaultItem={0}
                   className="p-[6px] shadow-md gap-[8px] rounded-[16px] flex w-max text-[#959595] items-center"
+                  SelectedItemMask="shadow-md font-bold text-black"
                 >
                   <SelectionItem
                     SelectedItem={
-                      <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] shadow-md font-bold text-black">
+                      <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                         <div>Upcoming</div>
                         <img src={light}></img>
                       </div>
@@ -376,7 +377,7 @@ export const LandlordTenantOverview = () => {
                   />
                   <SelectionItem
                     SelectedItem={
-                      <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] shadow-md font-bold text-black">
+                      <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                         <div>Current</div>
                         <img src={light}></img>
                       </div>
@@ -392,7 +393,7 @@ export const LandlordTenantOverview = () => {
                   />
                   <SelectionItem
                     SelectedItem={
-                      <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] shadow-md font-bold text-black">
+                      <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                         <div>Completed</div>
                         <img src={light}></img>
                       </div>
@@ -408,7 +409,7 @@ export const LandlordTenantOverview = () => {
                   />
                   <SelectionItem
                     SelectedItem={
-                      <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] shadow-md font-bold text-black">
+                      <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                         <div>Canceled</div>
                         <img src={light}></img>
                       </div>

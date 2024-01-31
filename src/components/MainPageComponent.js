@@ -182,6 +182,7 @@ export const MainPageComponent = () => {
                     src={closeIcon}
                     className="mr-[-10px] cursor-pointer"
                     onClick={handleClose}
+                    alt="Close"
                   />
                 </div>
                 <div className="mt-[20px]">
@@ -292,10 +293,11 @@ export const MainPageComponent = () => {
                     <SelectionGroup
                       defaultItem={0}
                       className="flex gap-[8px] text-[#D5D5D5] my-[12px]"
+                      SelectedItemMask="border-[#5D00CF] text-[#5D00CF]"
                     >
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             Any
                           </div>
                         }
@@ -307,7 +309,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             1
                           </div>
                         }
@@ -319,7 +321,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             2
                           </div>
                         }
@@ -331,7 +333,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             3
                           </div>
                         }
@@ -343,7 +345,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             4
                           </div>
                         }
@@ -355,7 +357,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             5
                           </div>
                         }
@@ -367,7 +369,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             6
                           </div>
                         }
@@ -379,7 +381,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             7+
                           </div>
                         }
@@ -498,10 +500,11 @@ export const MainPageComponent = () => {
                     <SelectionGroup
                       defaultItem={0}
                       className="flex gap-[8px] text-[#D5D5D5] my-[12px]"
+                      SelectedItemMask="border-[#5D00CF] text-[#5D00CF]"
                     >
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             Any
                           </div>
                         }
@@ -513,7 +516,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             1
                           </div>
                         }
@@ -525,7 +528,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             2
                           </div>
                         }
@@ -537,7 +540,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             3
                           </div>
                         }
@@ -549,7 +552,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             4
                           </div>
                         }
@@ -561,7 +564,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             5
                           </div>
                         }
@@ -573,7 +576,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             6
                           </div>
                         }
@@ -585,7 +588,7 @@ export const MainPageComponent = () => {
                       />
                       <SelectionItem
                         SelectedItem={
-                          <div className="w-full py-[8px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                          <div className="w-full py-[8px] border-[1px] rounded-[16px] text-center">
                             7+
                           </div>
                         }
@@ -604,10 +607,11 @@ export const MainPageComponent = () => {
                   <SelectionGroup
                     defaultItem={0}
                     className="flex gap-[8px] text-[#D5D5D5] my-[12px]"
+                    SelectedItemMask="border-[#5D00CF] text-[#5D00CF]"
                   >
                     <SelectionItem
                       SelectedItem={
-                        <div className="w-full py-[30px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                        <div className="w-full py-[30px] border-[1px] rounded-[16px] text-center">
                           House
                         </div>
                       }
@@ -619,7 +623,7 @@ export const MainPageComponent = () => {
                     />
                     <SelectionItem
                       SelectedItem={
-                        <div className="w-full py-[30px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                        <div className="w-full py-[30px] border-[1px] rounded-[16px] text-center">
                           Apartment
                         </div>
                       }
@@ -631,7 +635,7 @@ export const MainPageComponent = () => {
                     />
                     <SelectionItem
                       SelectedItem={
-                        <div className="w-full py-[30px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                        <div className="w-full py-[30px] border-[1px] rounded-[16px] text-center">
                           Guesthouse
                         </div>
                       }
@@ -643,7 +647,7 @@ export const MainPageComponent = () => {
                     />
                     <SelectionItem
                       SelectedItem={
-                        <div className="w-full py-[30px] border-[1px] rounded-[16px] border-[#5D00CF] text-[#5D00CF] text-center">
+                        <div className="w-full py-[30px] border-[1px] rounded-[16px] text-center">
                           Hotel
                         </div>
                       }

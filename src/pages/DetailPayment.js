@@ -152,10 +152,10 @@ export const DetailPayment = () => {
           <div className="bg-[#D9D9D9] w-full h-[1px]"></div>
           <div className="space-y-[8px]">
             <div className="font-bold text-[24px]">Choose how to pay</div>
-            <SelectionGroup defaultItem={0}>
+            <SelectionGroup defaultItem={0} SelectedItemMask="shadow-md">
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center gap-[16px] shadow-md p-[12px] rounded-[16px]">
+                  <div className="flex items-center gap-[16px] p-[12px] rounded-[16px]">
                     <img src={radio1}></img>
                     <div>
                       <div className="text-[18px]">Pay in full</div>
@@ -186,7 +186,7 @@ export const DetailPayment = () => {
               />
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center gap-[16px] p-[12px] shadow-md rounded-[16px]">
+                  <div className="flex items-center gap-[16px] p-[12px] rounded-[16px]">
                     <img src={radio1}></img>
                     <div>
                       <div className="text-[18px]">Pay Monthly</div>

@@ -218,12 +218,13 @@ export const Header = () => {
           <SelectionGroup
             className="px-[6px] py-[4px] rounded-[14px] shadow-md flex gap-[10px] text-[#959595]"
             defaultItem={mode}
+            SelectedItemMask="shadow-md rounded-[10px]"
           >
             <SelectionItem
               SelectedItem={
-                <div className="w-[130px] flex justify-between py-[2px] px-[20px] items-center gap-[10px] shadow-md rounded-[10px]">
+                <div className="w-[130px] flex justify-between py-[2px] px-[20px] items-center gap-[10px] rounded-[10px]">
                   <div className="text-black">YieldEstate</div>
-                  <img src={light}></img>
+                  <img src={light} alt=""></img>
                 </div>
               }
               UnselectedItem={
@@ -245,9 +246,9 @@ export const Header = () => {
                   onMouseLeave={() => setShowRentDropdown(false)}
                   className="relative text-black"
                 >
-                  <div className="w-[130px] flex justify-between px-[15px] py-[2px] items-center gap-[10px] shadow-md rounded-[10px]">
+                  <div className="w-[130px] flex justify-between px-[15px] py-[2px] items-center gap-[10px]">
                     <div className="">Rent</div>
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                   <div
                     className="absolute top-[0px] w-[130px] bg-white shadow-md rounded-[10px] font-normal"
@@ -323,9 +324,9 @@ export const Header = () => {
             />
             <SelectionItem
               SelectedItem={
-                <div className="w-[130px] flex justify-between py-[2px] px-[40px] items-center gap-[10px] shadow-md rounded-[10px]">
+                <div className="w-[130px] flex justify-between py-[2px] px-[40px] items-center gap-[10px]">
                   <div className="text-black">Buy</div>
-                  <img src={light}></img>
+                  <img src={light} alt=""></img>
                 </div>
               }
               UnselectedItem={
@@ -348,9 +349,9 @@ export const Header = () => {
                   onClick={() => navigate("/dashboard")}
                   className="relative text-black"
                 >
-                  <div className="w-[130px] flex justify-between px-[12px] py-[2px] items-center gap-[10px] shadow-md rounded-[10px]">
+                  <div className="w-[130px] flex justify-between px-[12px] py-[2px] items-center gap-[10px]">
                     <div className="text-black">Dashboard</div>
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                   <div
                     className="absolute top-[0px] w-[130px] bg-white shadow-md rounded-[10px] font-normal"
@@ -474,7 +475,7 @@ export const Header = () => {
                 >
                   <div className="w-[130px] flex justify-between px-[12px] py-[2px] items-center gap-[10px]">
                     <div className="text-[#959595]">Dashboard</div>
-                    <img src={arrowdown}></img>
+                    <img src={arrowdown} alt=""></img>
                   </div>
                   <div
                     className="absolute top-[0px] w-[130px] bg-white shadow-md rounded-[10px] font-normal"
@@ -482,7 +483,7 @@ export const Header = () => {
                   >
                     <div className="w-[130px] flex justify-between px-[12px] py-[2px] items-center gap-[10px]">
                       <div className="font-semibold">Dashboard</div>
-                      <img src={arrowtop}></img>
+                      <img src={arrowtop} alt=""></img>
                     </div>
                     <div className="pl-[12px] text-[14px] text-[#B6B6B6]">
                       Long-term Rental

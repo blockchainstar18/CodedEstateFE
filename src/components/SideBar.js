@@ -89,21 +89,24 @@ export const SideBar = () => {
           <div className="space-y-[10px] h-max">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-[10px]">
-                <img src={landlord}></img>
+                <img src={landlord} alt=""></img>
                 <div className="text-[18px]">Landlord’s Dashboard</div>
               </div>
-              <img src={arrowtoleft}></img>
+              <img src={arrowtoleft} alt=""></img>
             </div>
-            <SelectionGroup defaultItem={mode}>
+            <SelectionGroup
+              defaultItem={mode}
+              SelectedItemMask="rounded-[16px] shadow-md bg-[#F6F6F6]"
+            >
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={dashboardactive}></img>
+                      <img src={dashboardactive} alt=""></img>
                       <div>Dashboard</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -112,7 +115,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(0))}
                   >
                     <div className="flex items-center">
-                      <img src={dashboardinactive}></img>
+                      <img src={dashboardinactive} alt=""></img>
                       <div className="text-[#959595]">Dashboard</div>
                     </div>
                   </div>
@@ -122,11 +125,11 @@ export const SideBar = () => {
                 SelectedItem={
                   <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
                     <div className="flex items-center">
-                      <img src={tenantactive}></img>
+                      <img src={tenantactive} alt=""></img>
                       <div>Tenant Overview</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -135,7 +138,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(1))}
                   >
                     <div className="flex items-center">
-                      <img src={tenantinactive}></img>
+                      <img src={tenantinactive} alt=""></img>
                       <div className="text-[#959595]">Tenant Overview</div>
                     </div>
                   </div>
@@ -145,11 +148,11 @@ export const SideBar = () => {
                 SelectedItem={
                   <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
                     <div className="flex items-center">
-                      <img src={nftactive}></img>
+                      <img src={nftactive} alt=""></img>
                       <div>My Real Estate NFTs</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -158,7 +161,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(2))}
                   >
                     <div className="flex items-center">
-                      <img src={nftinactive}></img>
+                      <img src={nftinactive} alt=""></img>
                       <div className="text-[#959595]">My Real Estate NFTs</div>
                     </div>
                   </div>
@@ -168,11 +171,11 @@ export const SideBar = () => {
                 SelectedItem={
                   <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
                     <div className="flex items-center">
-                      <img src={transactionactive}></img>
+                      <img src={transactionactive} alt=""></img>
                       <div>Transaction</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -181,7 +184,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(3))}
                   >
                     <div className="flex items-center">
-                      <img src={transactioninactive}></img>
+                      <img src={transactioninactive} alt=""></img>
                       <div className="text-[#959595]">Transaction</div>
                     </div>
                   </div>
@@ -235,13 +238,13 @@ export const SideBar = () => {
               /> */}
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={inboxactive}></img>
+                      <img src={inboxactive} alt=""></img>
                       <div>Inbox</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -250,7 +253,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(4))}
                   >
                     <div className="flex items-center">
-                      <img src={inboxinactive}></img>
+                      <img src={inboxinactive} alt=""></img>
                       <div className="text-[#959595]">Inbox</div>
                     </div>
                   </div>
@@ -285,16 +288,17 @@ export const SideBar = () => {
           <SelectionGroup
             className="p-[6px] rounded-[16px] shadow-md flex gap-[8px] h-max"
             defaultItem={0}
+            SelectedItemMask="rounded-[10px] shadow-md"
           >
             <SelectionItem
               SelectedItem={
-                <div className="flex justify-between items-center py-[6px] rounded-[10px] shadow-md w-full px-[10px]">
+                <div className="flex justify-between items-center py-[6px] w-full px-[10px]">
                   <div className="flex items-center">
-                    <img src={host}></img>
+                    <img src={host} alt=""></img>
                     <div>Landlord</div>
                   </div>
 
-                  <img src={light}></img>
+                  <img src={light} alt=""></img>
                 </div>
               }
               UnselectedItem={
@@ -305,7 +309,7 @@ export const SideBar = () => {
                   }}
                 >
                   <div className="flex items-center">
-                    <img src={host}></img>
+                    <img src={host} alt=""></img>
                     <div>Landlord</div>
                   </div>
                 </div>
@@ -313,12 +317,12 @@ export const SideBar = () => {
             />
             <SelectionItem
               SelectedItem={
-                <div className="flex justify-between items-center py-[6px] rounded-[10px] shadow-md w-full px-[10px]">
+                <div className="flex justify-between items-center py-[6px] w-full px-[10px]">
                   <div className="flex items-center">
-                    <img src={traveler}></img>
+                    <img src={traveler} alt=""></img>
                     <div>Tenant</div>
                   </div>
-                  <img src={light}></img>
+                  <img src={light} alt=""></img>
                 </div>
               }
               UnselectedItem={
@@ -329,7 +333,7 @@ export const SideBar = () => {
                   }}
                 >
                   <div className="flex items-center">
-                    <img src={traveler}></img>
+                    <img src={traveler} alt=""></img>
                     <div>Tenant</div>
                   </div>
                 </div>
@@ -345,21 +349,24 @@ export const SideBar = () => {
           <div className="space-y-[10px] h-max">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-[10px]">
-                <img src={traveler}></img>
+                <img src={traveler} alt=""></img>
                 <div className="text-[18px]">Traveller’s Dashboard</div>
               </div>
-              <img src={arrowtoleft}></img>
+              <img src={arrowtoleft} alt=""></img>
             </div>
-            <SelectionGroup defaultItem={mode}>
+            <SelectionGroup
+              defaultItem={mode}
+              SelectedItemMask="rounded-[16px] shadow-md bg-[#F6F6F6]"
+            >
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={dashboardactive}></img>
+                      <img src={dashboardactive} alt=""></img>
                       <div>Dashboard</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -368,7 +375,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(0))}
                   >
                     <div className="flex items-center">
-                      <img src={dashboardinactive}></img>
+                      <img src={dashboardinactive} alt=""></img>
                       <div className="text-[#959595]">Dashboard</div>
                     </div>
                   </div>
@@ -376,13 +383,13 @@ export const SideBar = () => {
               />
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={tripsactive}></img>
+                      <img src={tripsactive} alt=""></img>
                       <div>Trips</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -391,7 +398,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(1))}
                   >
                     <div className="flex items-center">
-                      <img src={tripsinactive}></img>
+                      <img src={tripsinactive} alt=""></img>
                       <div className="text-[#959595]">Trips</div>
                     </div>
                   </div>
@@ -399,13 +406,13 @@ export const SideBar = () => {
               />
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={wishlistactive}></img>
+                      <img src={wishlistactive} alt=""></img>
                       <div>Wishlist</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -414,7 +421,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(2))}
                   >
                     <div className="flex items-center">
-                      <img src={wishlistinactive}></img>
+                      <img src={wishlistinactive} alt=""></img>
                       <div className="text-[#959595]">Wishlist</div>
                     </div>
                   </div>
@@ -423,13 +430,13 @@ export const SideBar = () => {
 
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={inboxactive}></img>
+                      <img src={inboxactive} alt=""></img>
                       <div>Inbox</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -438,7 +445,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(3))}
                   >
                     <div className="flex items-center">
-                      <img src={inboxinactive}></img>
+                      <img src={inboxinactive} alt=""></img>
                       <div className="text-[#959595]">Inbox</div>
                     </div>
                   </div>
@@ -450,22 +457,23 @@ export const SideBar = () => {
           <SelectionGroup
             className="p-[6px] rounded-[16px] shadow-md flex gap-[8px] h-max"
             defaultItem={1}
+            SelectedItemMask="rounded-[10px] shadow-md"
           >
             <SelectionItem
               SelectedItem={
-                <div className="flex justify-between items-center py-[6px] rounded-[10px] shadow-md w-full px-[10px]">
+                <div className="flex justify-between items-center py-[6px] w-full px-[10px]">
                   <div className="flex items-center">
-                    <img src={host}></img>
+                    <img src={host} alt=""></img>
                     <div>Host</div>
                   </div>
 
-                  <img src={light}></img>
+                  <img src={light} alt=""></img>
                 </div>
               }
               UnselectedItem={
                 <div className="flex justify-between items-center py-[6px] w-full px-[10px]">
                   <div className="flex items-center">
-                    <img src={host}></img>
+                    <img src={host} alt=""></img>
                     <div>Host</div>
                   </div>
                 </div>
@@ -473,18 +481,18 @@ export const SideBar = () => {
             />
             <SelectionItem
               SelectedItem={
-                <div className="flex justify-between items-center py-[6px] rounded-[10px] shadow-md w-full px-[10px]">
+                <div className="flex justify-between items-center py-[6px] w-full px-[10px]">
                   <div className="flex items-center">
-                    <img src={traveler}></img>
+                    <img src={traveler} alt=""></img>
                     <div>Traveler</div>
                   </div>
-                  <img src={light}></img>
+                  <img src={light} alt=""></img>
                 </div>
               }
               UnselectedItem={
                 <div className="flex justify-between items-center py-[6px] w-full px-[10px]">
                   <div className="flex items-center">
-                    <img src={traveler}></img>
+                    <img src={traveler} alt=""></img>
                     <div>Traveler</div>
                   </div>
                 </div>
@@ -500,21 +508,24 @@ export const SideBar = () => {
           <div className="space-y-[10px] h-max">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-[10px]">
-                <img src={landlord}></img>
+                <img src={landlord} alt=""></img>
                 <div className="text-[18px]">Tenant's Dashboard</div>
               </div>
-              <img src={arrowtoleft}></img>
+              <img src={arrowtoleft} alt=""></img>
             </div>
-            <SelectionGroup defaultItem={mode}>
+            <SelectionGroup
+              defaultItem={mode}
+              SelectedItemMask="rounded-[16px] shadow-md bg-[#F6F6F6]"
+            >
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={dashboardactive}></img>
+                      <img src={dashboardactive} alt=""></img>
                       <div>Dashboard</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -523,7 +534,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(0))}
                   >
                     <div className="flex items-center">
-                      <img src={dashboardinactive}></img>
+                      <img src={dashboardinactive} alt=""></img>
                       <div className="text-[#959595]">Dashboard</div>
                     </div>
                   </div>
@@ -531,13 +542,13 @@ export const SideBar = () => {
               />
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={rentalactive}></img>
+                      <img src={rentalactive} alt=""></img>
                       <div>My Rental</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -546,7 +557,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(1))}
                   >
                     <div className="flex items-center">
-                      <img src={rentalinactive}></img>
+                      <img src={rentalinactive} alt=""></img>
                       <div className="text-[#959595]">My Rental</div>
                     </div>
                   </div>
@@ -554,13 +565,13 @@ export const SideBar = () => {
               />
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={transactionactive}></img>
+                      <img src={transactionactive} alt=""></img>
                       <div>Transaction</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -569,7 +580,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(2))}
                   >
                     <div className="flex items-center">
-                      <img src={transactioninactive}></img>
+                      <img src={transactioninactive} alt=""></img>
                       <div className="text-[#959595]">Transaction</div>
                     </div>
                   </div>
@@ -624,13 +635,13 @@ export const SideBar = () => {
 
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={inboxactive}></img>
+                      <img src={inboxactive} alt=""></img>
                       <div>Inbox</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -639,7 +650,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(3))}
                   >
                     <div className="flex items-center">
-                      <img src={inboxinactive}></img>
+                      <img src={inboxinactive} alt=""></img>
                       <div className="text-[#959595]">Inbox</div>
                     </div>
                   </div>
@@ -651,16 +662,17 @@ export const SideBar = () => {
           <SelectionGroup
             className="p-[6px] rounded-[16px] shadow-md flex gap-[8px] h-max"
             defaultItem={1}
+            SelectedItemMask="rounded-[10px] shadow-md"
           >
             <SelectionItem
               SelectedItem={
-                <div className="flex justify-between items-center py-[6px] rounded-[10px] shadow-md w-full px-[10px]">
+                <div className="flex justify-between items-center py-[6px] w-full px-[10px]">
                   <div className="flex items-center">
-                    <img src={host}></img>
+                    <img src={host} alt=""></img>
                     <div>Landlord</div>
                   </div>
 
-                  <img src={light}></img>
+                  <img src={light} alt=""></img>
                 </div>
               }
               UnselectedItem={
@@ -671,7 +683,7 @@ export const SideBar = () => {
                   }}
                 >
                   <div className="flex items-center">
-                    <img src={host}></img>
+                    <img src={host} alt=""></img>
                     <div>Landlord</div>
                   </div>
                 </div>
@@ -679,12 +691,12 @@ export const SideBar = () => {
             />
             <SelectionItem
               SelectedItem={
-                <div className="flex justify-between items-center py-[6px] rounded-[10px] shadow-md w-full px-[10px]">
+                <div className="flex justify-between items-center py-[6px] w-full px-[10px]">
                   <div className="flex items-center">
-                    <img src={traveler}></img>
+                    <img src={traveler} alt=""></img>
                     <div>Tenant</div>
                   </div>
-                  <img src={light}></img>
+                  <img src={light} alt=""></img>
                 </div>
               }
               UnselectedItem={
@@ -695,7 +707,7 @@ export const SideBar = () => {
                   }}
                 >
                   <div className="flex items-center">
-                    <img src={traveler}></img>
+                    <img src={traveler} alt=""></img>
                     <div>Tenant</div>
                   </div>
                 </div>
@@ -711,21 +723,24 @@ export const SideBar = () => {
           <div className="space-y-[10px] h-max">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-[10px]">
-                <img src={landlord}></img>
+                <img src={landlord} alt=""></img>
                 <div className="text-[18px]">YieldEstate</div>
               </div>
-              <img src={arrowtoleft}></img>
+              <img src={arrowtoleft} alt=""></img>
             </div>
-            <SelectionGroup defaultItem={mode}>
+            <SelectionGroup
+              defaultItem={mode}
+              SelectedItemMask="rounded-[16px] shadow-md bg-[#F6F6F6]"
+            >
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={propertyactive}></img>
+                      <img src={propertyactive} alt=""></img>
                       <div>Properties</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -734,7 +749,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(0))}
                   >
                     <div className="flex items-center">
-                      <img src={propertyinactive}></img>
+                      <img src={propertyinactive} alt=""></img>
                       <div className="text-[#959595]">Properties</div>
                     </div>
                   </div>
@@ -742,13 +757,13 @@ export const SideBar = () => {
               />
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={walletactive}></img>
+                      <img src={walletactive} alt=""></img>
                       <div>Wallet</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -757,7 +772,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(1))}
                   >
                     <div className="flex items-center">
-                      <img src={walletinactive}></img>
+                      <img src={walletinactive} alt=""></img>
                       <div className="text-[#959595]">Wallet</div>
                     </div>
                   </div>
@@ -765,13 +780,13 @@ export const SideBar = () => {
               />
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={insightsactive}></img>
+                      <img src={insightsactive} alt=""></img>
                       <div>Portfolio</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -780,7 +795,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(2))}
                   >
                     <div className="flex items-center">
-                      <img src={insightsinactive}></img>
+                      <img src={insightsinactive} alt=""></img>
                       <div className="text-[#959595]">Portfolio</div>
                     </div>
                   </div>
@@ -789,13 +804,13 @@ export const SideBar = () => {
 
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={rentalactive}></img>
+                      <img src={rentalactive} alt=""></img>
                       <div>Reward</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -804,7 +819,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(3))}
                   >
                     <div className="flex items-center">
-                      <img src={rentalinactive}></img>
+                      <img src={rentalinactive} alt=""></img>
                       <div className="text-[#959595]">Reward</div>
                     </div>
                   </div>
@@ -812,13 +827,13 @@ export const SideBar = () => {
               />
               <SelectionItem
                 SelectedItem={
-                  <div className="flex items-center justify-between px-[14px] py-[8px] rounded-[16px] shadow-md bg-[#F6F6F6]">
+                  <div className="flex items-center justify-between px-[14px] py-[8px]">
                     <div className="flex items-center">
-                      <img src={cartactive}></img>
+                      <img src={cartactive} alt=""></img>
                       <div>Cart</div>
                     </div>
 
-                    <img src={light}></img>
+                    <img src={light} alt=""></img>
                   </div>
                 }
                 UnselectedItem={
@@ -827,7 +842,7 @@ export const SideBar = () => {
                     onClick={() => dispatch(setDashboardMode(4))}
                   >
                     <div className="flex items-center">
-                      <img src={cartinactive}></img>
+                      <img src={cartinactive} alt=""></img>
                       <div className="text-[#959595]">Cart</div>
                     </div>
                   </div>
