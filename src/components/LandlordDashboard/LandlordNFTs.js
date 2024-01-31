@@ -262,11 +262,11 @@ export const LandlordNFTs = () => {
               <SelectionGroup
                 defaultItem={NFTsFlag}
                 className="p-[6px] shadow-md gap-[8px] rounded-[16px] flex w-max text-[#959595] items-center"
-                SelectedItemMask="shadow-md font-bold text-black"
+                SelectedItemMask="shadow-md"
               >
                 <SelectionItem
                   SelectedItem={
-                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
+                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] text-black">
                       <div>Verified NFTs</div>
                       <img src={light} alt=""></img>
                     </div>
@@ -282,7 +282,7 @@ export const LandlordNFTs = () => {
                 />
                 <SelectionItem
                   SelectedItem={
-                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
+                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] text-black">
                       <div>Unverified NFTs</div>
                       <img src={light} alt=""></img>
                     </div>
@@ -298,7 +298,7 @@ export const LandlordNFTs = () => {
                 />
                 <SelectionItem
                   SelectedItem={
-                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
+                    <div className="w-[160px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px] text-black">
                       <div>My Listings</div>
                       <img src={light} alt=""></img>
                     </div>

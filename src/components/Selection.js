@@ -61,7 +61,7 @@ export const SelectionGroup = ({
         }}
       >
         <div
-          className={`absolute w-[100px] h-[40px] top-[${selectedItemRect.y}px] left-[${selectedItemRect.x}px] w-[${selectedItemRect.width}px] h-[${selectedItemRect.height}px] transition ease-in-out duration-300 ${SelectedItemMask} z-0`}
+          className={`absolute w-[100px] h-[40px] top-[${selectedItemRect.y}px] left-[${selectedItemRect.x}px] w-[${selectedItemRect.width}px] h-[${selectedItemRect.height}px] transition ease-in-out duration-200 ${SelectedItemMask} z-0`}
         ></div>
         {React.Children.map(children, (child, index) => {
           return React.cloneElement(child, {
@@ -90,7 +90,7 @@ export const SelectionItem = ({
     if (selected) {
       setTimeout(() => {
         setSelectedA(selected);
-      }, 300);
+      }, 180);
     } else {
       setSelectedA(selected);
     }
