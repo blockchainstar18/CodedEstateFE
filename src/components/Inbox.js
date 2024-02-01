@@ -398,7 +398,7 @@ export const Inbox = () => {
               />
             </div>
             <div
-              className="text-white rounded-[100px] bg-[#5D00CF] w-[150px] text-center py-[8px] cursor-pointer"
+              className="bg-[#5D00CF] w-[150px] text-center py-[8px] cursor-pointer px-[18px] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px]"
               onClick={() => {
                 // setReceiver("nibi1ejt9zv8apvfh7vjr0zlsn48ka79wg4jw0pc820");
                 sendMessage();

@@ -80,7 +80,7 @@ export const LandingPage = () => {
   let currentIndex = 0;
 
   const cycleText = () => {
-    if (currentIndex == 4) currentIndex = 0;
+    if (currentIndex === 4) currentIndex = 0;
     setHeadlineText(texts[currentIndex]);
     currentIndex++;
     setTimeout(() => {
@@ -89,7 +89,7 @@ export const LandingPage = () => {
   };
 
   const connect = async (wallet) => {
-    if (wallet == "xdefi") {
+    if (wallet === "xdefi") {
       console.log(window.xfi);
       if (!window.xfi) {
         alert("Please install xdefi extension");
@@ -97,7 +97,7 @@ export const LandingPage = () => {
       }
     }
 
-    if (wallet == "leap") {
+    if (wallet === "leap") {
       if (!window.leap) {
         alert("Please install leap extension");
       } else {
@@ -124,7 +124,7 @@ export const LandingPage = () => {
       }
     }
 
-    if (wallet == "keplr") {
+    if (wallet === "keplr") {
       if (!window.keplr) {
         alert("Please install keplr extension");
       } else {
@@ -179,7 +179,7 @@ export const LandingPage = () => {
   return (
     <div className="w-full bg-white" hidden={show}>
       <div className="flex items-center justify-between py-[14px] px-[100px] fixed top-0 w-full h-max z-[1200] bg-white">
-        <img src={logo} width={140}></img>
+        <img src={logo} width={140} alt=""></img>
         <div className="flex items-center gap-[32px] cursor-pointer">
           <div
             onClick={() => {
@@ -209,7 +209,7 @@ export const LandingPage = () => {
           >
             <div
               // className="bg-[#5D00CF] text-white px-[18px] py-[10px] rounded-[16px] cursor-pointer "
-              className="cursor-pointer px-[18px] py-[10px] bg-[#5D00CF] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px]"
+              className="cursor-pointer px-[18px] py-[10px] bg-[#5D00CF] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px]"
               onClick={handleShow}
             >
               Connect Wallet
@@ -226,18 +226,18 @@ export const LandingPage = () => {
             <Modal.Body>
               <div className="p-[18px] rounded-[16px] w-full fullheight flex flex-col">
                 <div className="flex items-center justify-between">
-                  <img src={logo}></img>
+                  <img src={logo} alt=""></img>
                   <div className="flex items-center gap-[12px]">
                     {/* <div className="px-[14px] py-[8px] border-[#5D00CF] border-[1px] rounded-[16px] text-[#5D00CF] flex items-center gap-[8px]"> */}
                     <div className="cursor-pointer px-[18px] py-[10px] text-5D00CF shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(120,60,20,0.5)] hover:-translate-y-[3px] flex items-center gap-[8px]">
-                      <img src={warning}></img>
+                      <img src={warning} alt=""></img>
                       <div>I don't have wallet</div>
                     </div>
                     <div
                       className="shadow-md rounded-[16px]"
                       onClick={handleClose}
                     >
-                      <img src={plus}></img>
+                      <img src={plus} alt=""></img>
                     </div>
                   </div>
                 </div>
@@ -258,7 +258,7 @@ export const LandingPage = () => {
                         connect("xdefi");
                       }}
                     >
-                      <img src={xdefi}></img>
+                      <img src={xdefi} alt=""></img>
                       <div>
                         <div className="font-bold">Xdefi</div>
                         <div className="font-semibold text-[#4C37C3]">
@@ -267,7 +267,7 @@ export const LandingPage = () => {
                       </div>
                     </div>
                     <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100">
-                      <img src={metamask}></img>
+                      <img src={metamask} alt=""></img>
                       <div>
                         <div className="font-bold">Metamask</div>
                         <div className="font-semibold text-[#4C37C3]">
@@ -281,7 +281,7 @@ export const LandingPage = () => {
                         connect("keplr");
                       }}
                     >
-                      <img src={keplr} className="w-[40px]"></img>
+                      <img src={keplr} className="w-[40px]" alt=""></img>
                       <div>
                         <div className="font-bold">Keplr</div>
 
@@ -295,7 +295,7 @@ export const LandingPage = () => {
                       </div>
                     </div>
                     <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100">
-                      <img src={phantom}></img>
+                      <img src={phantom} alt=""></img>
                       <div>
                         <div className="font-bold">Phantom</div>
                         <div className="font-semibold text-[#4C37C3]">
@@ -304,7 +304,7 @@ export const LandingPage = () => {
                       </div>
                     </div>
                     <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100">
-                      <img src={coinbase}></img>
+                      <img src={coinbase} alt=""></img>
                       <div>
                         <div className="font-bold">Coinbase</div>
                         <div className="font-semibold text-[#4C37C3]">
@@ -313,7 +313,7 @@ export const LandingPage = () => {
                       </div>
                     </div>
                     <div className="px-[8px] py-[12px] rounded-[8px] shadow-md flex gap-[12px] items-center cursor-pointer transition ease-in-out hover:bg-gray-300 duration-100">
-                      <img src={walletconnect}></img>
+                      <img src={walletconnect} alt=""></img>
                       <div>
                         <div className="font-bold">WalletConnect</div>
                         <div className="font-semibold text-[#4C37C3]">
@@ -328,7 +328,7 @@ export const LandingPage = () => {
                         connect("leap");
                       }}
                     >
-                      <img src={leap} className="w-[40px]"></img>
+                      <img src={leap} className="w-[40px]" alt=""></img>
                       <div>
                         <div className="font-bold">Leap</div>
                         {wallets.isLeapInstalled ? (
@@ -356,23 +356,23 @@ export const LandingPage = () => {
       </div>
 
       <div id="home" className="mt-[70px] relative w-full flex">
-        <img src={map} className="w-full"></img>
+        <img src={map} className="w-full" alt=""></img>
         <div className="absolute w-full h-full flex z-[10]">
           <div className="m-auto">
-            <div className="flex text-[48px] gap-[16px]">
+            <div className="flex text-[48px] gap-[16px] p-[24px] rounded-[12px] shadow-md bg-white">
               <div>Easiest Way to</div>
               <div className="w-[100px]">{headlineText}</div>
               <div>Real Estate</div>
             </div>
             <div className="globalInputForm p-[4px] pl-[16px] flex items-center w-full gap-[12px] radius40 mt-[20px]">
-              <img src={home}></img>
+              <img src={home} alt=""></img>
               <input placeholder="Search properties" className="w-full"></input>
               <OverlayTrigger
                 placement={"bottom"}
                 overlay={<Tooltip>coming soon</Tooltip>}
               >
                 <div className="bg-[#202020] p-[10px] rounded-[40px] cursor-pointer">
-                  <img src={home1}></img>
+                  <img src={home1} alt=""></img>
                 </div>
               </OverlayTrigger>
             </div>
@@ -420,34 +420,42 @@ export const LandingPage = () => {
         <img
           src={homeCanada}
           className="absolute top-[8vw] left-[10vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          alt=""
         ></img>
         <img
           src={homeUS}
           className="absolute top-[16vw] left-[20vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          alt=""
         ></img>
         <img
           src={homeGreenland}
           className="absolute top-[4vw] left-[35vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          alt=""
         ></img>
         <img
           src={homeBrazil}
           className="absolute top-[32vw] left-[30vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          alt=""
         ></img>
         <img
           src={homeFinland}
           className="absolute top-[8vw] left-[62vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          alt=""
         ></img>
         <img
           src={homeRussia}
           className="absolute top-[7vw] left-[75vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          alt=""
         ></img>
         <img
           src={Card}
           className="absolute rounded-[16px] top-[10vw] left-[77vw] z-[90] transition ease-in-out duration-300 hover:-translate-y-[20px] hover:z-[110]"
+          alt=""
         ></img>
         <img
           src={homeIndonesia}
           className="absolute top-[30vw] left-[74vw] rounded-[50%] z-[100] transition ease-in-out hover:scale-150 duration-300 hover:-translate-y-1"
+          alt=""
         ></img>
       </div>
 
@@ -463,6 +471,7 @@ export const LandingPage = () => {
             <img
               src={icon}
               className="mx-[80px] transition ease-in-out hover:-translate-y-[20px] duration-300"
+              alt=""
             ></img>
             <div className="flex">
               <div className="m-auto space-y-[20px]">
@@ -499,12 +508,14 @@ export const LandingPage = () => {
             <img
               src={icon1}
               className="mx-[80px] transition ease-in-out hover:-translate-y-[20px] duration-300"
+              alt=""
             ></img>
           </div>
           <div className="flex my-[50px]">
             <img
               src={icon2}
               className="mx-[80px] transition ease-in-out hover:-translate-y-[20px] duration-300"
+              alt=""
             ></img>
             <div className="flex">
               <div className="m-auto space-y-[20px]">
@@ -542,6 +553,7 @@ export const LandingPage = () => {
             <img
               src={icon3}
               className="mx-[80px] transition ease-in-out hover:-translate-y-[20px] duration-300"
+              alt=""
             ></img>
           </div>
         </div>
@@ -599,6 +611,7 @@ export const LandingPage = () => {
           <img
             src={image}
             className="transition ease-in-out duration-300 hover:-translate-y-5"
+            alt=""
           ></img>
         </div>
       </div>
@@ -611,27 +624,27 @@ export const LandingPage = () => {
             </div>
           </div>
           <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
-            <img src={real}></img>
+            <img src={real} alt=""></img>
             <div>Real world assets in NFTs</div>
           </div>
           <div></div>
           <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
-            <img src={hidd}></img>
+            <img src={hidd} alt=""></img>
             <div>No hidden or extra fees</div>
           </div>
           <div></div>
           <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
-            <img src={remo}></img>
+            <img src={remo} alt=""></img>
             <div>Remove barriers to real estate investments</div>
           </div>
           <div></div>
           <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
-            <img src={frict}></img>
+            <img src={frict} alt=""></img>
             <div>Frictionless buying and selling</div>
           </div>
           <div></div>
           <div className="p-[20px] shadow-md space-y-[16px] rounded-[8px] transition ease-in-out hover:-translate-y-[10px] duration-100">
-            <img src={fully}></img>
+            <img src={fully} alt=""></img>
             <div>Fully decentralised process</div>
           </div>
         </div>
@@ -641,7 +654,7 @@ export const LandingPage = () => {
         <div className="flex justify-between">
           <div className="flex flex-col justify-between items-center">
             <div className="w-full my-[20px]">
-              <img src={logowhite}></img>
+              <img src={logowhite} alt=""></img>
             </div>
             <div className="flex text-white gap-[24px]">
               <div
@@ -693,7 +706,7 @@ export const LandingPage = () => {
           <div className="flex gap-[10px]">
             <div>
               <a href="https://discord.gg/vdMcXkQQ" target="blank">
-                <img src={discord}></img>
+                <img src={discord} alt=""></img>
               </a>
             </div>
             <div>
@@ -701,7 +714,7 @@ export const LandingPage = () => {
                 href="https://x.com/codedestate?s=21&t=5OdxYhHLF31Z8VwzP3lI0g"
                 target="blank"
               >
-                <img src={twitter}></img>
+                <img src={twitter} alt=""></img>
               </a>
             </div>
           </div>

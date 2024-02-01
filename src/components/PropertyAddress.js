@@ -78,7 +78,7 @@ export const PropertyAddress = () => {
                   {metaData["Building Name"].buildingNameEn}
                 </div>
                 <div className="flex items-center">
-                  <img src={locationPin}></img>
+                  <img src={locationPin} alt=""></img>
                   <div className="text-[#A4A4A4] ">
                     {metaData.Area.areaEn}, Dubai
                   </div>
@@ -86,19 +86,19 @@ export const PropertyAddress = () => {
               </div>
               <div className="flex items-end">
                 <div className="flex gap-[20px] ">
-                  <div className="flex items-center shadow-md py-[4px] px-[8px] rounded-[400px] gap-[10px] cursor-pointer">
-                    <img src={send}></img>
+                  <div className="flex items-center py-[4px] px-[8px] gap-[10px] cursor-pointer shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full hover:shadow-[-1px_6px_10px_0_rgba(80,80,80,0.5)] hover:-translate-y-[3px]">
+                    <img src={send} alt=""></img>
                     <div>Share</div>
                   </div>
-                  <div className="flex items-center shadow-md py-[4px] px-[8px] rounded-[400px] gap-[10px] cursor-pointer">
-                    <img src={heart}></img>
+                  <div className="flex items-center py-[4px] px-[8px] gap-[10px] cursor-pointer shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full hover:shadow-[-1px_6px_10px_0_rgba(80,80,80,0.5)] hover:-translate-y-[3px]">
+                    <img src={heart} alt=""></img>
                     <div>Save</div>
                   </div>
-                  {mode == 3 && submode == 2 ? (
+                  {mode === 3 && submode === 2 ? (
                     <></>
                   ) : (
-                    <div className="flex items-center shadow-md py-[4px] px-[8px] rounded-[400px] bg-[#5B1DEE] text-white gap-[5px] cursor-pointer">
-                      <img src={user}></img>
+                    <div className="flex items-center py-[4px] px-[8px] gap-[5px] cursor-pointer bg-[#5D00CF] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px]">
+                      <img src={user} alt=""></img>
                       <div>View Profile</div>
                     </div>
                   )}

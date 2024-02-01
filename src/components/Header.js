@@ -101,9 +101,18 @@ export const Header = () => {
       <div className="flex w-full h-[60px] items-center justify-between p-[20px] bg-white rounded-t-lg fixed top-0 font-semibold z-[1200]">
         <img src={logo} width={130}></img>
 
-        <div className="flex items-center">
-          <img src={group}></img>
-          <img src={frame} onClick={handleShowNoti}></img>
+        <div className="flex items-center gap-2">
+          <img
+            src={group}
+            className="shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] cursor-pointer rounded-full hover:shadow-[-1px_6px_10px_0_rgba(91,29,238,0.5)] hover:-translate-y-[3px] transition"
+            alt=""
+          ></img>
+          <img
+            src={frame}
+            onClick={handleShowNoti}
+            alt=""
+            className="shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] cursor-pointer rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(80,80,80,0.5)] hover:-translate-y-[3px] transition"
+          ></img>
           <Modal
             show={showNoti}
             onHide={handleCloseNoti}
@@ -137,10 +146,14 @@ export const Header = () => {
             </Modal.Body>
           </Modal>
           <Link to="/swap">
-            <img src={frame1}></img>
+            <img
+              src={frame1}
+              alt=""
+              className="shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] cursor-pointer rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(80,80,80,0.5)] hover:-translate-y-[3px] transition"
+            ></img>
           </Link>
           <div
-            className="bg-[#5B1DEE] rounded-[16px] px-[12px] py-[10px] text-[14px] text-white cursor-pointer"
+            className="bg-[#5B1DEE] cursor-pointer px-[18px] py-[10px] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(91,29,238,0.5)] hover:-translate-y-[3px]"
             onClick={handleShow}
           >
             {account?.substring(0, 5) +
@@ -155,11 +168,15 @@ export const Header = () => {
             <Modal.Body>
               <div>
                 <div className="flex justify-end">
-                  <img src={cross} onClick={handleClose}></img>
+                  <img src={cross} onClick={handleClose} alt=""></img>
                 </div>
                 <div className="space-y-[20px] px-[20px] pb-[20px] w-[350px]">
                   {/* <img src={User} className="mx-auto"></img> */}
-                  <img src={walletIcon} className="mx-auto w-[100px]"></img>
+                  <img
+                    src={walletIcon}
+                    className="mx-auto w-[100px]"
+                    alt=""
+                  ></img>
                   <div className="globalInputForm flex w-full px-[12px] py-[9px] gap-[6px]">
                     {/* <input placeholder="Not Connected yet"></input> */}
                     <input
@@ -171,25 +188,25 @@ export const Header = () => {
                       className="w-full"
                       disabled
                     ></input>
-                    <img src={copy}></img>
+                    <img src={copy} alt=""></img>
                   </div>
 
                   <div className="grid grid-cols-2 gap-[20px]">
                     <Link to="/wallet">
                       <div
-                        className="border-[1px] border-[#FFFFFF] shadow-md rounded-[16px] flex items-center px-[20px] py-[12px] gap-[8px]"
+                        className="border-[1px] border-[#FFFFFF] cursor-pointer px-[18px] py-[10px] shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(80,80,80,0.5)] hover:-translate-y-[3px] flex items-center"
                         onClick={handleClose}
                       >
-                        <img src={wallet1}></img>
+                        <img src={wallet1} alt=""></img>
                         <div className="text-black">Wallet</div>
                       </div>
                     </Link>
                     <Link to="/account">
                       <div
-                        className="border-[1px] border-[#FFFFFF] shadow-md rounded-[16px] flex items-center px-[20px] py-[12px] gap-[8px]"
+                        className="border-[1px] border-[#FFFFFF]  cursor-pointer px-[18px] py-[10px] shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(80,80,80,0.5)] hover:-translate-y-[3px] flex items-center"
                         onClick={handleClose}
                       >
-                        <img src={user}></img>
+                        <img src={user} alt=""></img>
                         <div className="text-black">Account</div>
                       </div>
                     </Link>
@@ -199,12 +216,12 @@ export const Header = () => {
                 <div>Buy now</div>
               </div> */}
                   <div
-                    className="bg-[#202020] gap-[10px] py-[12px] rounded-[40px] text-white w-full text-center font-semibold flex items-center justify-center cursor-pointer"
+                    className="bg-[#202020] gap-[10px] py-[12px]  text-white w-full text-center font-semibold flex items-center justify-center  cursor-pointer px-[18px] shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full  hover:shadow-[-1px_6px_10px_0_rgba(80,80,80,0.5)] hover:-translate-y-[3px]"
                     onClick={() => {
                       dispatch(disconnect());
                     }}
                   >
-                    <img src={logout}></img>
+                    <img src={logout} alt=""></img>
                     <div>Disconnect</div>
                   </div>
                 </div>

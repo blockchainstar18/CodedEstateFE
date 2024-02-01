@@ -379,16 +379,16 @@ export const Dashboard = () => {
       ) : (
         <></>
       )}
-      {headerMode == 6 ? (
+      {headerMode === 6 ? (
         <>
-          {dashboardMode == 1 ? (
+          {dashboardMode === 1 ? (
             <>
               <div className="p-[16px] w-full space-y-[16px]">
                 <div>Wallet</div>
                 <div className="grid grid-cols-2 w-full gap-[16px]">
                   <div className="p-[16px] rounded-[8px] shadow-md w-full space-y-[16px]">
                     <div className="flex items-center gap-[10px]">
-                      <img src={walletIcon} />
+                      <img src={walletIcon} alt="" />
                       <div className="text-[#959595]">Cash balance</div>
                     </div>
                     <div className="flex items-center justify-between">
@@ -405,12 +405,12 @@ export const Dashboard = () => {
                   </div>
                   <div className="p-[16px] rounded-[8px] shadow-md w-full space-y-[16px]">
                     <div className="flex items-center gap-[10px]">
-                      <img src={medalIcon} />
+                      <img src={medalIcon} alt="" />
                       <div className="text-[#959595]">Rewards balance</div>
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="text-[24px] text-[#959595]">NUSD 0</div>
-                      <img src={starfavorite} />
+                      <img src={starfavorite} alt="" />
                     </div>
                   </div>
                 </div>

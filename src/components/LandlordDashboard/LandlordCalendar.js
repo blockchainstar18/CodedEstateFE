@@ -10,11 +10,11 @@ export const LandlordCalendar = () => {
           <div className="border-[1px] border-[#E6E6E6] rounded-[100px] p-[6px] flex items-center gap-[12px]">
             <div className="rounded-[100px] p-[14px] bg-[#E6E6E6]" />
             <div>Modern Apartment in Bergen</div>
-            <img src={arrowdown} className="mr-[10px]" />
+            <img src={arrowdown} className="mr-[10px]" alt="" />
           </div>
           <div className="border-[1px] border-[#E6E6E6] rounded-[100px] px-[16px] py-[6px] flex items-center gap-[12px]">
             <div>View</div>
-            <img src={arrowdown} />
+            <img src={arrowdown} alt="" />
           </div>
         </div>
         <MonthsCalendar

@@ -63,7 +63,7 @@ export const PropertyReserve = ({ action, hide }) => {
               <div className="font-bold text-[18px]">Price</div>
 
               <div className="flex items-center text-[20px] gap-[5px]">
-                <img src={NUSD}></img>
+                <img src={NUSD} alt=""></img>
                 <div className="text-[#5B1DEE] px-[4px] py-[2px] rounded-[8px] shadow-md">
                   {pricePerMonth}
                 </div>

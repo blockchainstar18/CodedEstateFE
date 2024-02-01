@@ -82,7 +82,7 @@ export const CarouselCompo = ({
             <div
               className={`rounded-[10px] w-full h-[${imageHeight}] flex items-center`}
             >
-              <img src={emptyImage} className="m-auto"></img>
+              <img src={emptyImage} className="m-auto" alt=""></img>
             </div>
           </Carousel.Item>
         ) : (
@@ -90,7 +90,8 @@ export const CarouselCompo = ({
             <Carousel.Item>
               <img
                 src={gateWay + image}
-                className={`rounded-[10px] w-full h-[${imageHeight}]`}
+                className={`rounded-[10px] w-full h-[${imageHeight}] hover:scale-125 transition`}
+                alt=""
               ></img>
             </Carousel.Item>
           ))
@@ -111,7 +112,7 @@ export const CarouselCompo = ({
             <></>
           ) : (
             <div className="flex items-center ml-[10px] my-[10px] font-semibold text-[14px] gap-[10px]">
-              <img src={NUSD1}></img>
+              <img src={NUSD1} alt=""></img>
               <div className="shadow-md px-[4px] py-[2px] rounded-[8px] text-[#5B1DEE] font-bold text-[16px]">
                 {longtermrentalInfo.landlord.price_per_month}
               </div>

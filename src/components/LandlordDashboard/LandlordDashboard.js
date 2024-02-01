@@ -81,9 +81,9 @@ export const LandlordDashboard = () => {
           <div>
             <div className="font-bold">Verify ID</div>
             <div className="rounded-[8px] shadow-md px-[12px] py-[18px] space-y-[20px] w-[260px] flex flex-col items-center">
-              <img src={IDIcon} className="w-[88px]"></img>
+              <img src={IDIcon} className="w-[88px]" alt=""></img>
               <div
-                className="py-[8px] bg-black text-white text-center rounded-[100px] w-full cursor-pointer"
+                className="py-[8px] bg-black text-white text-center w-full cursor-pointer shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(0,0,0,0.5)] hover:-translate-y-[3px]"
                 onClick={() => {
                   navigate("/account");
                 }}
@@ -155,9 +155,9 @@ export const LandlordDashboard = () => {
 
         <div className="w-full h-full shadow-md rounded-[8px] flex">
           <div className="m-auto flex flex-col items-center space-y-[40px]">
-            <img src={verifyIcon1}></img>
+            <img src={verifyIcon1} alt=""></img>
             <div
-              className="bg-[#5B1DEE] text-white rounded-[100px] text-center w-[200px] py-[8px] cursor-pointer"
+              className="bg-[#5B1DEE] text-center w-[200px] py-[8px] cursor-pointer px-[18px] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px]"
               onClick={() => {
                 handleMint();
               }}

@@ -243,14 +243,14 @@ export const LandlordNFTs = () => {
               </div>
               <div className="p-[16px] rounded-[8px] shadow-md flex items-center justify-between">
                 <div className="flex items-center gap-[10px]">
-                  <img src={upcoming}></img>
+                  <img src={upcoming} alt=""></img>
                   <div className="text-[#8C8C8C]">Upcoming</div>
                 </div>
                 <div className="text-[24px]">100</div>
               </div>
               <div className="p-[16px] rounded-[8px] shadow-md flex items-center justify-between">
                 <div className="flex items-center gap-[10px]">
-                  <img src={rent}></img>
+                  <img src={rent} alt=""></img>
                   <div className="text-[#8C8C8C]">Recent Active Rent</div>
                 </div>
                 <div className="text-[24px]">6</div>

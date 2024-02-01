@@ -9,10 +9,10 @@ export const Rent = () => {
 
   return (
     <>
-      {page == null ? <MainPageComponent /> : <></>}
-      {page == "detail" ? <DetailPage /> : <></>}
-      {page == "confirmation" ? <DetailPayment /> : <></>}
-      {page == "confirmed" ? <DetailConfirm /> : <></>}
+      {page === null ? <MainPageComponent /> : <></>}
+      {page === "detail" ? <DetailPage /> : <></>}
+      {page === "confirmation" ? <DetailPayment /> : <></>}
+      {page === "confirmed" ? <DetailConfirm /> : <></>}
     </>
   );
 };

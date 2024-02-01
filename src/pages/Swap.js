@@ -322,16 +322,17 @@ export const Swap = () => {
                       <img
                         src={swapParams.swapFrom.icon}
                         className="w-[30px]"
+                        alt=""
                       />
                       <div className="text-[18px] cursor-pointer select-none">
                         {swapParams.swapFrom.name}
                       </div>
-                      <img src={arrowdown} />
+                      <img src={arrowdown} alt="" />
                     </div>
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     {coinList.map((item) => {
-                      return item.denom != swapParams.swapFrom.denom ? (
+                      return item.denom !== swapParams.swapFrom.denom ? (
                         <Dropdown.Item>
                           <div
                             className="flex items-center gap-[4px] w-[80px]"
@@ -342,7 +343,7 @@ export const Swap = () => {
                               })
                             }
                           >
-                            <img src={item.icon} className="w-[30px]" />
+                            <img src={item.icon} className="w-[30px]" alt="" />
                             <div className="text-[18px] cursor-pointer select-none">
                               {item.name}
                             </div>
@@ -363,7 +364,7 @@ export const Swap = () => {
                 />
               </div>
               <div className="shadow-md flex rounded-[100px] items-center text-[#4C37C3] w-max px-[12px] py-[4px]">
-                <img src={notification} className="mr-[8px]" />
+                <img src={notification} className="mr-[8px]" alt="" />
                 <div>Your balance:</div>
                 <div className="font-bold">
                   {balances[swapParams.swapFrom.name] +
@@ -371,17 +372,18 @@ export const Swap = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-center mt-[-10px]">
+            <div className="w-full flex justify-center mt-[-10px] ">
               <img
                 src={swapIcon}
-                className="cursor-pointer"
+                className="cursor-pointer shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px] transition"
                 onClick={() => {
                   setPairSwap(true);
                   swapPair();
                 }}
+                alt=""
               />
             </div>
-            <div className="p-[16px] rounded-[8px] shadow-md space-y-[12px] mt-[-10px] border-t-[1px] border-[#eeeeee]">
+            <div className="p-[16px] rounded-[8px] shadow-md space-y-[12px] mt-[-10px] border-t-[1px] border-[#eeeeee] ">
               <div className="font-bold">Receive</div>
 
               <div className="text-[#aaaaaa]">
@@ -416,7 +418,11 @@ export const Swap = () => {
                                 })
                               }
                             >
-                              <img src={item.icon} className="w-[30px]" />
+                              <img
+                                src={item.icon}
+                                className="w-[30px]"
+                                alt=""
+                              />
                               <div className="text-[18px] cursor-pointer select-none">
                                 {item.name}
                               </div>
@@ -430,7 +436,11 @@ export const Swap = () => {
                   </Dropdown>
                 ) : (
                   <div className="flex items-center gap-[4px] w-[100px]">
-                    <img src={swapParams.swapTo?.icon} className="w-[30px]" />
+                    <img
+                      src={swapParams.swapTo?.icon}
+                      className="w-[30px]"
+                      alt=""
+                    />
                     <div className="text-[18px] cursor-pointer select-none">
                       {swapParams.swapTo?.name}
                     </div>
@@ -444,7 +454,7 @@ export const Swap = () => {
                 />
               </div>
               <div className="shadow-md flex rounded-[100px] items-center text-[#4C37C3] w-max px-[12px] py-[4px]">
-                <img src={notification} className="mr-[8px]" />
+                <img src={notification} className="mr-[8px]" alt="" />
                 <div>Your balance:</div>
                 <div className="font-bold">
                   {balances[swapParams.swapTo?.name] + swapParams.swapTo?.name}
@@ -453,7 +463,7 @@ export const Swap = () => {
             </div>
 
             <div
-              className="bg-[#5D00CF] text-white text-center py-[12px] rounded-[16px] mt-[16px] cursor-pointer"
+              className="bg-[#5D00CF] text-white text-center mt-[16px] cursor-pointer px-[18px] py-[10px] shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full font-bold hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px]"
               onClick={() => {
                 swapTokens();
               }}

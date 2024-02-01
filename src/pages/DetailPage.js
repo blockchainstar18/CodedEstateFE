@@ -299,7 +299,7 @@ export const DetailPage = () => {
               action={
                 <>
                   <div
-                    className="bg-[#5B1DEE] px-[20px] py-[12px] rounded-[16px] text-white w-full text-center my-[30px] cursor-pointer"
+                    className="px-[20px] py-[12px] w-full text-center my-[30px] cursor-pointer bg-[#5D00CF] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px]"
                     onClick={() => {
                       if (dates.length) dispatch(setPage("confirmation"));
                     }}
@@ -343,7 +343,7 @@ export const DetailPage = () => {
         </div> */}
         <div className="flex">
           <div
-            className="bg-[#5B1DEE] mx-auto mt-[20px] px-[50px] rounded-[15px] text-white py-[8px] cursor-pointer"
+            className="mx-auto mt-[20px] px-[50px] py-[8px] cursor-pointer bg-[#5D00CF] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px]"
             onClick={() => {
               dispatch(setSomeoneToContact(landlord));
               dispatch(

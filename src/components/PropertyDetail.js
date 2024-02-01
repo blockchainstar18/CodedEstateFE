@@ -111,7 +111,7 @@ export const PropertyDetail = ({ editable }) => {
             <div>Virtual tour</div>
           </div> */}
               <div
-                className="bg-[#5B1DEE] px-[24px] rounded-[15px] text-white py-[8px] cursor-pointer"
+                className="px-[24px] py-[8px] cursor-pointer bg-[#5D00CF] text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] hover:-translate-y-[3px]"
                 onClick={() => {
                   dispatch(setSomeoneToContact(landlord));
                   dispatch(
