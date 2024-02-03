@@ -109,18 +109,18 @@ export const MainPageComponent = () => {
           <div className="text-[28px] font-semibold">Marketplace</div> */}
           {/* Rent Mode */}
 
-          {mode == 1 && submode == 0 ? (
+          {mode === 1 && submode === 0 ? (
             <>
-              <img src={rent}></img>
+              <img src={rent} alt=""></img>
               <div className="text-[28px] font-semibold">Long-Term Rental</div>
             </>
           ) : (
             <></>
           )}
 
-          {mode == 1 && submode == 1 ? (
+          {mode === 1 && submode === 1 ? (
             <>
-              <img src={rent}></img>
+              <img src={rent} alt=""></img>
               <div className="text-[28px] font-semibold">Short-Term Rental</div>
             </>
           ) : (
@@ -133,7 +133,7 @@ export const MainPageComponent = () => {
           className="flex items-center gap-[8px] shadow-md bg-white rounded-[20px] px-[24px] py-[14px] mt-[8px] z-[1000] cursor-pointer mr-[240px]"
           onClick={handleShow}
         >
-          <img src={iconFilter}></img>
+          <img src={iconFilter} alt=""></img>
           <div className="">Filter</div>
         </div>
 
@@ -840,6 +840,11 @@ export const MainPageComponent = () => {
                 longtermrentalInfo={item.longtermrental_info}
                 totalPriceHide={true}
                 imageHeight={"200px"}
+                btn={
+                  <div className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]">
+                    View Details
+                  </div>
+                }
                 onClick={() => {
                   dispatch(
                     setNFT({

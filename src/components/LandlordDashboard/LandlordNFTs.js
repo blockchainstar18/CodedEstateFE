@@ -229,14 +229,14 @@ export const LandlordNFTs = () => {
             <div className="grid grid-cols-4 gap-[16px]">
               <div className="p-[16px] rounded-[8px] shadow-md flex items-center justify-between">
                 <div className="flex items-center gap-[10px]">
-                  <img src={listed}></img>
+                  <img src={listed} alt=""></img>
                   <div className="text-[#8C8C8C]">Total NFTs Listed</div>
                 </div>
                 <div className="text-[24px]">{totalListedNFTsCount}</div>
               </div>
               <div className="p-[16px] rounded-[8px] shadow-md flex items-center justify-between">
                 <div className="flex items-center gap-[10px]">
-                  <img src={unverified}></img>
+                  <img src={unverified} alt=""></img>
                   <div className="text-[#8C8C8C]">Total NFTs Unverified</div>
                 </div>
                 <div className="text-[24px]">{totalUnverifedNFTsCount}</div>
@@ -337,7 +337,7 @@ export const LandlordNFTs = () => {
               {/* <PropertyItem /> */}
 
               {assets.map((item) => {
-                if (item.longtermrental_info.islisted && NFTsFlag == 2)
+                if (item.longtermrental_info.islisted && NFTsFlag === 2)
                   return (
                     <CarouselCompo
                       nftInfo={item.nft_info}
@@ -347,7 +347,7 @@ export const LandlordNFTs = () => {
                       imageHeight={"200px"}
                       btn={
                         <div
-                          className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                          className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                           onClick={() => {
                             // setListNFT(item.token_id, false, "unibi", 0, 0, []);
 
@@ -372,7 +372,7 @@ export const LandlordNFTs = () => {
                   !item.longtermrental_info.islisted &&
                   item.metaData.images &&
                   item.metaData.offers &&
-                  NFTsFlag == 0
+                  NFTsFlag === 0
                 )
                   return (
                     <CarouselCompo
@@ -384,7 +384,7 @@ export const LandlordNFTs = () => {
                       imageHeight={"200px"}
                       btn={
                         <div
-                          className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                          className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                           onClick={() => {
                             setCurrentToken(item);
 
@@ -409,7 +409,7 @@ export const LandlordNFTs = () => {
                   !item.longtermrental_info.islisted &&
                   !item.metaData.images &&
                   !item.metaData.offers &&
-                  NFTsFlag == 1
+                  NFTsFlag === 1
                 )
                   return (
                     <CarouselCompo
@@ -421,7 +421,7 @@ export const LandlordNFTs = () => {
                       imageHeight={"200px"}
                       btn={
                         <div
-                          className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                          className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                           onClick={() => {
                             setActionMode(false);
                             dispatch(
@@ -441,6 +441,7 @@ export const LandlordNFTs = () => {
                       }
                     />
                   );
+                return "";
               })}
             </div>
             {/* <div className="w-max shadow-md rounded-[10px] p-[10px] h-max">
@@ -486,7 +487,7 @@ export const LandlordNFTs = () => {
       ) : (
         <></>
       )}
-      {actionMode == false ? (
+      {actionMode === false ? (
         <>
           <div className="p-[16px]">
             <div className="w-full flex justify-end">

@@ -79,6 +79,7 @@ export const LandlordTenantOverview = () => {
                     src={arrowtoLeft}
                     className="w-[20px]"
                     onClick={() => setTenantOverviewFlag(!tenantOverviewFlag)}
+                    alt=""
                   />
                   <div className="font-bold text-[24px]">Your Payment Plan</div>
                 </div>
@@ -99,29 +100,29 @@ export const LandlordTenantOverview = () => {
                     <div>Dec</div>
                   </div>
                   <div className="flex items-center my-[15px]">
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                     <div className="bg-[#EFE8FD] h-[4px] w-full" />
-                    <img src={circleIcon} />
+                    <img src={circleIcon} alt="" />
                   </div>
                   <div className="flex justify-between w-full">
                     <div>
@@ -189,7 +190,7 @@ export const LandlordTenantOverview = () => {
                 <div className="h-full w-full flex">
                   <div className="m-auto">
                     <div className=" py-[20px] rounded-[8px] shadow-md w-[500px] flex items-center gap-[14px]">
-                      <img src={clockAlarm} />
+                      <img src={clockAlarm} alt="" />
                       <div>Days rented out</div>
                       <div className="p-[4px] shadow-md text-[#5B1DEE] rounded-[8px]">
                         {daysRentedOut}
@@ -197,7 +198,7 @@ export const LandlordTenantOverview = () => {
                       <div>days</div>
                     </div>
                     <div className=" py-[20px] rounded-[8px] shadow-md w-[500px] flex items-center gap-[14px]">
-                      <img src={clockAlarm} />
+                      <img src={clockAlarm} alt="" />
                       <div>Days left of rental</div>
                       <div className="p-[4px] shadow-md text-[#5B1DEE] rounded-[8px]">
                         {daysLeftOfRental}
@@ -210,7 +211,7 @@ export const LandlordTenantOverview = () => {
                   <div className="flex flex-col justify-between h-full w-[400px] p-[16px] shadow-md rounded-[16px]">
                     <div className="font-bold">Message Landlord</div>
                     <div className="flex items-center">
-                      <img src={profileIcon} />
+                      <img src={profileIcon} alt="" />
                       <div>
                         Marit is here to help you if you have any questions
                       </div>
@@ -234,7 +235,7 @@ export const LandlordTenantOverview = () => {
                       PriceHide={true}
                       btn={
                         <div
-                          className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                          className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                           onClick={() => setViewDetailFlag(true)}
                         >
                           View Details
@@ -249,7 +250,7 @@ export const LandlordTenantOverview = () => {
                 <div className="font-bold text-[24px]">Monthly Payment</div>
                 <div className="shadow-md rounded-[16px] p-[12px] flex justify-between items-center">
                   <div className="text-[#B6B6B6]">Monthly Revenue</div>
-                  <img src={NUSD} />
+                  <img src={NUSD} alt="" />
                   <div className="p-[4px] rounded-[8px] text-[#5B1DEE] shadow-md">
                     {currentToken.longtermrental_info.landlord.price_per_month}
                   </div>
@@ -267,7 +268,7 @@ export const LandlordTenantOverview = () => {
                   <div className="flex items-center justify-between">
                     <div className="text-[#B6B6B6]">Rent / month</div>
                     <div className="flex items-center">
-                      <img src={NUSD} />
+                      <img src={NUSD} alt="" />
                       <div>
                         {
                           currentToken.longtermrental_info.landlord
@@ -288,7 +289,7 @@ export const LandlordTenantOverview = () => {
                   <div className="flex items-center justify-between">
                     <div>Monthly Sbtotal</div>
                     <div className="flex items-center">
-                      <img src={NUSD} />
+                      <img src={NUSD} alt="" />
                       <div className="text-[#5B1DEE]">
                         {
                           currentToken.longtermrental_info.landlord
@@ -302,7 +303,7 @@ export const LandlordTenantOverview = () => {
                   <div className="flex items-center justify-between">
                     <div className="text-[#B6B6B6]">Fee</div>
                     <div className="flex items-center">
-                      <img src={NUSD} />
+                      <img src={NUSD} alt="" />
                       <div>
                         {Number(
                           currentToken.longtermrental_info.landlord
@@ -315,7 +316,7 @@ export const LandlordTenantOverview = () => {
                   <div className="flex items-center justify-between">
                     <div>Total Payment</div>
                     <div className="flex items-center">
-                      <img src={NUSD} />
+                      <img src={NUSD} alt="" />
                       <div className="text-[#5B1DEE]">
                         {Number(
                           currentToken.longtermrental_info.landlord
@@ -328,17 +329,17 @@ export const LandlordTenantOverview = () => {
                 </div>
 
                 <div className="flex items-center justify-center text-white bg-[#5B1DEE] rounded-[16px] py-[10px] gap-[10px]">
-                  <img src={hourGlass}></img>
+                  <img src={hourGlass} alt=""></img>
                   <div>Awaiting payment</div>
                 </div>
 
                 <div className="flex items-center justify-center text-white bg-black rounded-[16px] py-[10px] gap-[10px]">
-                  <img src={printout}></img>
+                  <img src={printout} alt=""></img>
                   <div>Print Details</div>
                 </div>
 
                 <div className="flex items-center justify-center text-white bg-[#5B1DEE] rounded-[16px] py-[10px] gap-[10px]">
-                  <img src={checkout}></img>
+                  <img src={checkout} alt=""></img>
                   <div>Approve Checkout</div>
                 </div>
               </div>
@@ -363,7 +364,7 @@ export const LandlordTenantOverview = () => {
                     SelectedItem={
                       <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                         <div>Upcoming</div>
-                        <img src={light}></img>
+                        <img src={light} alt=""></img>
                       </div>
                     }
                     UnselectedItem={
@@ -379,7 +380,7 @@ export const LandlordTenantOverview = () => {
                     SelectedItem={
                       <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                         <div>Current</div>
-                        <img src={light}></img>
+                        <img src={light} alt=""></img>
                       </div>
                     }
                     UnselectedItem={
@@ -395,7 +396,7 @@ export const LandlordTenantOverview = () => {
                     SelectedItem={
                       <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                         <div>Completed</div>
-                        <img src={light}></img>
+                        <img src={light} alt=""></img>
                       </div>
                     }
                     UnselectedItem={
@@ -411,7 +412,7 @@ export const LandlordTenantOverview = () => {
                     SelectedItem={
                       <div className="w-[120px] rounded-[10px] flex items-center justify-between gap-[10px] px-[10px] py-[4px]">
                         <div>Canceled</div>
-                        <img src={light}></img>
+                        <img src={light} alt=""></img>
                       </div>
                     }
                     UnselectedItem={
@@ -428,17 +429,17 @@ export const LandlordTenantOverview = () => {
 
               <div className="flex items-center gap-[20px]">
                 <div className="flex items-center shadow-md rounded-[4px] px-[12px] py-[6px] gap-[12px]">
-                  <img src={search}></img>
+                  <img src={search} alt=""></img>
                   <input placeholder="Search" className="w-full" />
-                  <img src={slash}></img>
+                  <img src={slash} alt=""></img>
                 </div>
 
                 <div className="items-center flex">
                   <div className="p-[8px] bg-[#F2F2F2]">
-                    <img src={windowIcon}></img>
+                    <img src={windowIcon} alt=""></img>
                   </div>
                   <div className="p-[8px]">
-                    <img src={list}></img>
+                    <img src={list} alt=""></img>
                   </div>
                 </div>
               </div>
@@ -463,7 +464,7 @@ export const LandlordTenantOverview = () => {
                               imageHeight={"200px"}
                               btn={
                                 <div
-                                  className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                                  className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                                   onClick={() => {
                                     setCurrentToken(item);
                                     //   setMyRentalFlag(!myRentalFlag);
@@ -493,7 +494,7 @@ export const LandlordTenantOverview = () => {
                               imageHeight={"200px"}
                               btn={
                                 <div
-                                  className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                                  className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                                   onClick={() => {
                                     setCurrentToken(item);
                                     //   setMyRentalFlag(!myRentalFlag);
@@ -508,11 +509,11 @@ export const LandlordTenantOverview = () => {
                         );
                   })}
                   {assets.map((item) => {
-                    if (NFTsFlag == 1)
+                    if (NFTsFlag === 1)
                       if (
                         item.longtermrental_info.islisted &&
                         item.longtermrental_info.isreserved &&
-                        item.longtermrental_info.deposit_amount != "0"
+                        item.longtermrental_info.deposit_amount !== "0"
                       )
                         return (
                           <div className="w-[400px]">
@@ -524,7 +525,7 @@ export const LandlordTenantOverview = () => {
                               imageHeight={"200px"}
                               btn={
                                 <div
-                                  className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                                  className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                                   onClick={() => {
                                     setCurrentToken(item);
                                     //   setMyRentalFlag(!myRentalFlag);
@@ -538,11 +539,11 @@ export const LandlordTenantOverview = () => {
                           </div>
                         );
 
-                    if (NFTsFlag == 0)
+                    if (NFTsFlag === 0)
                       if (
                         item.longtermrental_info.islisted &&
                         item.longtermrental_info.isreserved &&
-                        item.longtermrental_info.deposit_amount == "0"
+                        item.longtermrental_info.deposit_amount === "0"
                       )
                         return (
                           <div className="w-[400px]">
@@ -554,7 +555,7 @@ export const LandlordTenantOverview = () => {
                               imageHeight={"200px"}
                               btn={
                                 <div
-                                  className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                                  className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                                   onClick={() => {
                                     setCurrentToken(item);
                                     //   setMyRentalFlag(!myRentalFlag);
@@ -567,12 +568,13 @@ export const LandlordTenantOverview = () => {
                             />
                           </div>
                         );
+                    return "";
                   })}
                 </div>
               ) : (
                 <div className="w-full shadow-md bg-[#F6F6F6] h-full flex flex-col">
                   <div className="m-auto flex flex-col">
-                    <img src={empty} className="m-auto"></img>
+                    <img src={empty} className="m-auto" alt=""></img>
                     <div>No Rentals Yet</div>
                     {/* <div className="m-auto flex gap-[30px] text-[#6B349A]">
                     <div className="underline">Listing page</div>
@@ -587,12 +589,28 @@ export const LandlordTenantOverview = () => {
       ) : (
         <>
           <div className="relative w-full h-full">
-            <img src={map} className="w-full h-full absolute top-0 left-0" />
-            <img src={locationPin} className="absolute left-[10%] top-[20%]" />
+            <img
+              src={map}
+              className="w-full h-full absolute top-0 left-0"
+              alt=""
+            />
+            <img
+              src={locationPin}
+              className="absolute left-[10%] top-[20%]"
+              alt=""
+            />
             <div className="p-[16px] rounded-[8px] shadow-md w-[400px] absolute bg-white right-0 h-full space-y-[16px]">
-              <img src={arrowtoLeft} onClick={() => setViewDetailFlag(false)} />
+              <img
+                src={arrowtoLeft}
+                onClick={() => setViewDetailFlag(false)}
+                alt=""
+              />
               <div>Your stay</div>
-              <img src={image} className="w-full rounded-[8px] h-[200px]" />
+              <img
+                src={image}
+                className="w-full rounded-[8px] h-[200px]"
+                alt=""
+              />
               <div className="p-[12px] rounded-[8px] shadow-md space-y-[16px]">
                 <div className="h-[120px] flex justify-between">
                   <div className="space-y-[2px]">
@@ -616,14 +634,14 @@ export const LandlordTenantOverview = () => {
                 <div className="w-full h-[1px] bg-[#E3E3E3]" />
 
                 <div className="flex items-start gap-[12px]">
-                  <img src={location} />
+                  <img src={location} alt="" />
                   <div>
                     <div>Convenience and security</div>
                     <div className="text-[#959595]">Address: Rasdalsvegen</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-[12px]">
-                  <img src={bookLet} />
+                  <img src={bookLet} alt="" />
                   <div>
                     <div>Things to know</div>
                     <div className="text-[#959595]">
@@ -632,14 +650,14 @@ export const LandlordTenantOverview = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-[12px]">
-                  <img src={messageschat} />
+                  <img src={messageschat} alt="" />
                   <div>
                     <div>Message your host</div>
                     <div className="text-[#959595]">Marit</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-[12px]">
-                  <img src={homehousebig} />
+                  <img src={homehousebig} alt="" />
                   <div>
                     <div>Your place</div>
                     <div className="text-[#959595]">

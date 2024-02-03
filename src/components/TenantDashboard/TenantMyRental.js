@@ -275,7 +275,7 @@ export const TenantMyRental = () => {
                             imageHeight={"200px"}
                             btn={
                               <div
-                                className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                                className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                                 onClick={() => {
                                   setCurrentToken(item);
                                   setViewDetailFlag(!viewDetailFlag);
@@ -311,7 +311,7 @@ export const TenantMyRental = () => {
                             imageHeight={"200px"}
                             btn={
                               <div
-                                className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                                className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                                 onClick={() => {
                                   setCurrentToken(item);
                                   setViewDetailFlag(!viewDetailFlag);
@@ -343,7 +343,7 @@ export const TenantMyRental = () => {
                             imageHeight={"200px"}
                             btn={
                               <div
-                                className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                                className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                                 onClick={() => {
                                   setCurrentToken(item);
                                   setViewDetailFlag(!viewDetailFlag);
@@ -525,7 +525,7 @@ export const TenantMyRental = () => {
                       PriceHide={true}
                       btn={
                         <div
-                          className="bg-[#5D00CF] py-[10px] rounded-[16px] text-white text-center mt-[10px] cursor-pointer"
+                          className="bg-[#5D00CF] py-[10px] text-center mt-[10px] cursor-pointer px-[18px]  text-white shadow-[-1px_3px_3px_0_rgba(80,80,80,0.2)] rounded-full group-hover:shadow-[-1px_6px_10px_0_rgba(93,0,207,0.5)] group-hover:-translate-y-[3px]"
                           onClick={() => setViewMapFlag(true)}
                         >
                           View Details

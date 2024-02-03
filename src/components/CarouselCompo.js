@@ -64,7 +64,7 @@ export const CarouselCompo = ({
 
   return (
     <div
-      className="w-full shadow-md rounded-[10px] p-[10px] relative h-max cursor-pointer"
+      className="w-full shadow-md rounded-[10px] p-[10px] relative h-max cursor-pointer group"
       onClick={onClick}
     >
       <Carousel
@@ -74,10 +74,10 @@ export const CarouselCompo = ({
         onClick={(e) => {
           if (!stopPropagation) e.stopPropagation();
         }}
-        prevIcon={<img src={btnprev}></img>}
-        nextIcon={<img src={btnnext}></img>}
+        prevIcon={<img src={btnprev} alt=""></img>}
+        nextIcon={<img src={btnnext} alt=""></img>}
       >
-        {images.length == 0 ? (
+        {images.length === 0 ? (
           <Carousel.Item>
             <div
               className={`rounded-[10px] w-full h-[${imageHeight}] flex items-center`}
@@ -90,7 +90,7 @@ export const CarouselCompo = ({
             <Carousel.Item>
               <img
                 src={gateWay + image}
-                className={`rounded-[10px] w-full h-[${imageHeight}] hover:scale-125 transition`}
+                className={`rounded-[10px] w-full h-[${imageHeight}] group-hover:scale-125 transition duration-500`}
                 alt=""
               ></img>
             </Carousel.Item>
@@ -100,7 +100,7 @@ export const CarouselCompo = ({
 
       {topRightIcon ? (
         <div className="absolute top-[20px] right-[20px] z-[10]">
-          <img src={topRightIcon}></img>
+          <img src={topRightIcon} alt=""></img>
         </div>
       ) : (
         <></>
@@ -125,25 +125,25 @@ export const CarouselCompo = ({
             <></>
           ) : (
             <div className="flex items-center ml-[10px] my-[10px] gap-[10px]">
-              <img src={NUSD}></img>
+              <img src={NUSD} alt=""></img>
               <div className="text-[#959595]">{totalPrice} NUSD Total</div>
             </div>
           )}
 
           <div className="flex items-center text-[#959595] ml-[10px] gap-[10px]">
-            <img src={LocationPin}></img>
+            <img src={LocationPin} alt=""></img>
             <div>{location}, Dubai</div>
           </div>
           <div className="flex items-center gap-[10px] text-[#959595] w-full">
-            <img src={icon}></img>
+            <img src={icon} alt=""></img>
             <div>350</div>
 
             <div className="w-[2px] h-[15px] bg-[#D9D9D9]"></div>
-            <img src={icon1}></img>
+            <img src={icon1} alt=""></img>
             <div>5</div>
             <div className="w-[2px] h-[15px] bg-[#D9D9D9]"></div>
 
-            <img src={icon2}></img>
+            <img src={icon2} alt=""></img>
             <div>1</div>
           </div>
         </>
